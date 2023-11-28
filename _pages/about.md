@@ -11,13 +11,17 @@ redirect_from:
 
 I am currently an Assistant Professor at School of Computer Science, Peking University, dedicated to exploring the computational principles of the brain. I view the brain as an intricate computer that offers profound insights for the development of brain-inspired or brain-like computing frameworks. 
 
-In my previous role as a postdoctoral researcher with the Prof. Wolfgang Maass at Institute of Theoretical Computer Science, Graz University of Technology, I delved into brain-like/brain-inspired computation and computational neuroscience. Before that, my doctoral research, conducted at School of Physics, the University of Sydney with Prof. Pulin Gong, focused on neurophysics, an interdisciplinary field bridging physics and neuroscience. This academic journey has equipped me with a multifaceted understanding of the brain, from its fundamental principles to applications in brain-inspired computing.
+In my previous role as a postdoctoral researcher with the Prof. Wolfgang Maass at Institute of Theoretical Computer Science, Graz University of Technology, I delved into brain-like computation and computational neuroscience. Before that, my doctoral research, conducted at School of Physics, the University of Sydney with Prof. Pulin Gong, focused on neurophysics, an interdisciplinary field bridging physics and neuroscience.
 
 Research Interest
 ======
-My primary research interest lies in unraveling the computational principles of the brain, with a specific focus on elucidating the intricate link between brain structure and computational function. Delving into this captivating realm, I seek to uncover the underlying mechanisms that govern the brain's extraordinary ability to process information, learn, and adapt. The intersection of neuroscience and computing serves as my playground, where I explore how the brain's neural architecture translates into its remarkable computational prowess.
+My primary research interest lies in unraveling the computational principles of the brain, with a specific focus on elucidating the link between brain structure and computational function. The intersection of neuroscience and computing serves as my playground.
 
-My approach involves modeling neural networks with physiological structures of the brain, followed by an analysis of the dynamic structures these physiological structures can generate. This exploration extends to understanding the spatiotemporal correlation that arise from these dynamic structures, with the ultimate goal of unveiling the working mechanisms of the brain embedded in these correlated structures. This comprehensive investigation forms the foundation for the application of brain-inspired principles to neuromorphic computing. To achieve this, I employ a multidisciplinary approach that intersects the fields of neuroscience, physics, computer science, and mathematics. 
+My approach involves modeling neural networks with physiological structures of the brain, followed by an analysis of the dynamic structures emerged from these physiological structures. This exploration extends to understanding the spatiotemporal correlation that arises from these dynamic structures, with the ultimate goal of unveiling the working mechanisms of the brain embedded in these correlated structures. To achieve this, I employ a multidisciplinary approach that intersects the fields of neuroscience, physics, computer science, and mathematics. 
+
+Hiring info
+======
+I am looking for talented PhD and undergraduate intern students to start my lab.
 
 Selected Publications
 ======
