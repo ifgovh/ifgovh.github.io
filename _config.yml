@@ -83,7 +83,7 @@ author:
   name             : "Guozhang Chen"
   avatar           : "profile.png"
   bio              : "Assistant professor at Peking University"
-  location         : "Location"
+  #location         : "Location"
   employer         : Peking University
   pubmed           : #""
   googlescholar    : "https://scholar.google.com/citations?user=bj356J0AAAAJ&hl=en"
