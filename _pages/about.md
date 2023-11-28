@@ -30,3 +30,5 @@ Selected Publications
 4. Chen, Guozhang, Cheng Kevin Qu, and Pulin Gong. "[Anomalous diffusion dynamics of learning in deep neural networks.](https://www.sciencedirect.com/science/article/pii/S0893608022000296)" Neural Networks 149 (2022): 18-28.
 
 5. Chen, Guozhang, and Pulin Gong. "[Computing by modulating spontaneous cortical activity patterns as a mechanism of active visual processing.](https://www.nature.com/articles/s41467-019-12918-8)" Nature communications 10.1 (2019): 4915.
+
+Check my [google scholar](https://scholar.google.com/citations?user=bj356J0AAAAJ&hl=en) to see more.
