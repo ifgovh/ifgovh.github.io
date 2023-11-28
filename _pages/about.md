@@ -11,7 +11,7 @@ redirect_from:
 
 I am currently an Assistant Professor at School of Computer Science, Peking University, dedicated to exploring the computational principles of the brain. I view the brain as an intricate computer that offers profound insights for the development of brain-inspired or brain-like computing frameworks. 
 
-In my previous role as a postdoctoral researcher with the Prof. Wolfgang Maass at Institute of Theoretical Computer Science, Graz University of Technology, I delved into brain-like/brain-inspired computation and computational neuroscience. Before that, my doctoral research, conducted at the University of Sydney with Prof. Pulin Gong, focused on neurophysics, an interdisciplinary field bridging physics and neuroscience. This academic journey has equipped me with a multifaceted understanding of the brain, from its fundamental principles to applications in brain-inspired computing.
+In my previous role as a postdoctoral researcher with the Prof. Wolfgang Maass at Institute of Theoretical Computer Science, Graz University of Technology, I delved into brain-like/brain-inspired computation and computational neuroscience. Before that, my doctoral research, conducted at School of Physics, the University of Sydney with Prof. Pulin Gong, focused on neurophysics, an interdisciplinary field bridging physics and neuroscience. This academic journey has equipped me with a multifaceted understanding of the brain, from its fundamental principles to applications in brain-inspired computing.
 
 Research Interest
 ======
