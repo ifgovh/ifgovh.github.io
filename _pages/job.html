@@ -1,0 +1,13 @@
+---
+layout: archive
+title: "Job Opportunities"
+permalink: /job/
+author_profile: true
+---
+
+{% include base_path %}
+
+
+{% for post in site.job %}
+  {% include archive-single.html %}
+{% endfor %}
