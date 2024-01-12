@@ -25,7 +25,7 @@ My approach involves modeling neural networks with physiological structures of t
 
 Hiring info
 ======
-I am currently looking for talented PhD and undergraduate intern students to start my lab. Please see more at [Job Opportunities](https://github.com/ifgovh/ifgovh.github.io/job).[ppp](https://github.com/ifgovh/ifgovh.github.io/portfolio)
+I am currently looking for talented PhD and undergraduate intern students to start my lab. Please see more at [Job Opportunities](https://ifgovh.github.io/portfolio).
 
 Selected Publications
 ======
