@@ -1,6 +1,6 @@
 ---
 title: "PhD Candidate Position"
-excerpt: "in Reverse engineering the brain"
+excerpt: "in reverse engineering the brain"
 collection: job
 ---
 
@@ -16,7 +16,7 @@ We are inviting applications for a few PhD positions focusing on the exciting in
 
 In addition, depending on the interest, PhD students will engage in the development of brain-inspired architectures and algorithms for AI, as well as for highly energy-efficient neuromorphic hardware.
 
-# Qualifications
+## Qualifications
 
 - A strong motivation for understanding "how the brain works".
 - A strong background in computer science, computational neuroscience, physics, or related fields.
@@ -24,7 +24,7 @@ In addition, depending on the interest, PhD students will engage in the developm
 - An excellent academic record, demonstrated research potential.
 - Intermediate to advanced English reading, communicating and writing skills.
 
-# How to Apply
+## How to Apply
 
 Interested candidates should submit the following:
 - A detailed CV.
