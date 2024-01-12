@@ -1,10 +1,10 @@
 ---
 title: "PhD Candidate Position"
-excerpt: "Reverse engineering the brain"
+excerpt: "in Reverse engineering the brain"
 collection: job
 ---
 
-We are inviting applications for a few PhD positions focusing on the exciting intersection of neuroscience and artificial intelligence. The selected candidate will collaborate with our team to reverse-engineer multi-scale, data-based models of the brain (cortical and subcortical structures), exploring their working mechanisms and learning capabilities. This research will build upon foundational work such as:
+We are inviting applications for a few PhD positions focusing on the exciting intersection of neuroscience and artificial intelligence. The selected candidate will collaborate with our team to reverse-engineer the brain (cortical and subcortical structures) in multi-scale, data-based models, exploring its working mechanisms and learning capabilities. This research will build upon foundational work such as:
 
 - Chen, Guozhang, Franz Scherr, and Wolfgang Maass. "[Data-based large-scale models provide a window into the organization of cortical computations](https://www.biorxiv.org/content/10.1101/2023.04.28.538662v3.abstract)." bioRxiv (2023): 2023-04.
 
@@ -14,19 +14,21 @@ We are inviting applications for a few PhD positions focusing on the exciting in
 
 - Chen, Guozhang, and Pulin Gong. "[Computing by modulating spontaneous cortical activity patterns as a mechanism of active visual processing.](https://www.nature.com/articles/s41467-019-12918-8)" Nature communications 10.1 (2019): 4915.
 
-In addition, this PhD student will engage in the development of brain-inspired architectures and algorithms for AI, as well as for highly energy-efficient neuromorphic hardware.
+In addition, depending on the interest, PhD students will engage in the development of brain-inspired architectures and algorithms for AI, as well as for highly energy-efficient neuromorphic hardware.
 
-# Qualifications:
+# Qualifications
 
+- A strong motivation for understanding "how the brain works".
 - A strong background in computer science, computational neuroscience, physics, or related fields.
 - Proficient skills in mathematics/theory and programming.
 - An excellent academic record, demonstrated research potential.
-- A strong motivation for understanding "how the brain works".
+- Intermediate to advanced English reading, communicating and writing skills.
 
-# Application Process:
+# How to Apply
 
 Interested candidates should submit the following:
 - A detailed CV.
+- A brief personal statement (explaining your movtivation and plan).
 - Academic transcripts.
 - Names of referees.
 - Links to thesis, publications, and any other relevant documents.
