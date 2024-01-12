@@ -1,7 +1,7 @@
 # main links links
 main:
   - title: "Job Opportunities"
-   url: /job/
+    url: /job/
   #- title: "Publications"
   #  url: /publications/
 
