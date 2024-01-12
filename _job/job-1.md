@@ -1,7 +1,7 @@
 ---
 title: "PhD Candidate Position"
 excerpt: "Reverse engineering the brain"
-collection: portfolio
+collection: job
 ---
 
 We are inviting applications for a few PhD positions focusing on the exciting intersection of neuroscience and artificial intelligence. The selected candidate will collaborate with our team to reverse-engineer multi-scale, data-based models of the brain (cortical and subcortical structures), exploring their working mechanisms and learning capabilities. This research will build upon foundational work such as:
