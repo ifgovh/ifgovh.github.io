@@ -22,9 +22,10 @@ In addition, my research interest extends to showcasing the remarkable capabilit
 <!--
 My approach involves modeling neural networks with physiological structures of the brain, followed by an analysis of the dynamic structures emerged from these physiological structures. This exploration extends to understanding the spatiotemporal correlation that arises from these dynamic structures, with the ultimate goal of unveiling the working mechanisms of the brain embedded in these correlated structures. To achieve this, I employ a multidisciplinary approach that intersects the fields of neuroscience, physics, computer science, and mathematics. 
 -->
+
 Hiring info
 ======
-I am currently looking for talented PhD and undergraduate intern students to start my lab. Please see more at [Job Opportunities](https://github.com/ifgovh/academicpages.github.io/tree/master/_job).
+I am currently looking for talented PhD and undergraduate intern students to start my lab. Please see more at [Job Opportunities](https://github.com/ifgovh/ifgovh.github.io/tree/master/_job).
 
 Selected Publications
 ======
