@@ -4,7 +4,7 @@ excerpt: "in reverse engineering the brain"
 collection: job
 ---
 
-We are inviting applications for a few PhD positions focusing on the exciting intersection of neuroscience and artificial intelligence. The selected candidate will collaborate with our team to reverse-engineer the brain (cortical and subcortical structures) in multi-scale, data-based models, exploring its working mechanisms and learning capabilities. This research will build upon foundational work such as:
+We are inviting applications for a few PhD positions focusing on the exciting intersection of neuroscience and artificial intelligence. The selected candidate will collaborate with our team to reverse-engineer the brain (cortical and subcortical structures) in multi-scale, data-based models, exploring its working mechanisms and learning capabilities with respect to generalization. This research will build upon foundational work such as:
 
 - Chen, Guozhang, Franz Scherr, and Wolfgang Maass. "[Data-based large-scale models provide a window into the organization of cortical computations](https://www.biorxiv.org/content/10.1101/2023.04.28.538662v3.abstract)." bioRxiv (2023): 2023-04.
 
