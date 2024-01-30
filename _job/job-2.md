@@ -10,7 +10,7 @@ collection: job
 - Contribute to writing research reports and academic papers.
 
 ## We Are Looking For
-- Junior or senior students.
+- At least sophomore students.
 - Enthusiasts in computational neuroscience, brain-inspired computing, or robotics.
 - Background in computer science, neuroscience, physics, engineering, etc.
 - Strong analytical and problem-solving skills.
