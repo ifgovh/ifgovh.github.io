@@ -30,4 +30,4 @@ Please send your
 - academic transcripts
 - a brief personal statement (explaining your interest in the internship and the value you can bring to the team) 
 
-to guozhang.chen [at] foxmail.com.
+to guozhang.chen [at] pku.edu.cn.

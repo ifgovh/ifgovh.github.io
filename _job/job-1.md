@@ -32,4 +32,4 @@ Interested candidates should submit the following:
 - Academic transcripts.
 - Names of referees.
 - Links to thesis, publications, and any other relevant documents.
-Please send your application with a tile "phd position application" to: guozhang.chen [at] foxmail.com
+Please send your application with a tile "phd position application" to: guozhang.chen [at] pku.edu.cn
