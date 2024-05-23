@@ -6,16 +6,12 @@ collection: job
 
 ## Intern Responsibilities
 - Participate in research projects related to computational neuroscience, brain-inspired intelligence systems include, but are not limited to autonomous driving and robotics.
-- Assist team members in data collection, analysis, and model building.
-- Contribute to writing research reports and academic papers.
 
 ## We Are Looking For
-- At least sophomore students.
 - Enthusiasts in computational neuroscience, brain-inspired computing, or robotics.
 - Background in computer science, neuroscience, physics, engineering, etc.
 - Strong analytical and problem-solving skills.
-- Proficiency in Python, C++, or similar programming languages.
-- Intermediate to advanced English reading and writing skills.
+- Proficiency in any programming languages.
 - Availability to work a minimum of 8 hours per week.
 
 ## Internship Benefits
