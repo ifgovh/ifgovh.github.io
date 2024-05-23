@@ -12,7 +12,7 @@ collection: job
 - Background in computer science, neuroscience, physics, engineering, etc.
 - Strong analytical and problem-solving skills.
 - Proficiency in any programming languages.
-- Availability to work a minimum of 8 hours per week.
+- Availability to work a minimum of 4 hours per week.
 
 ## Internship Benefits
 - Engage in pioneering research poised to create landmark breakthroughs in this burgeoning, 'Blue Ocean' field, mirroring AI's AlexNet moment.
