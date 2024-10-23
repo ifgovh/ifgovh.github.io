@@ -1,6 +1,6 @@
 ---
 title: "Internship Opportunities"
-# excerpt: "in Computational Neuroscience, Brain-Inspired Computing, and Robotics"
+excerpt: "Requirements and applying method"
 collection: job
 ---
 

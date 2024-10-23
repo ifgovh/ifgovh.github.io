@@ -1,6 +1,6 @@
 ---
 title: "PhD Candidate Position"
-# excerpt: "in reverse engineering the brain"
+excerpt: "Requirements and applying method"
 collection: job
 ---
 
