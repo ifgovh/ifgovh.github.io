@@ -14,7 +14,7 @@ main:
     url: /job/
         
   - title: "Blog Posts"
-    url: /posts/
+    url: /year-archive/
     
   #- title: "CV"
   #  url: /cv/
