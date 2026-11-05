@@ -1,2 +1,4 @@
 _site/
+.work/
+node_modules/
 

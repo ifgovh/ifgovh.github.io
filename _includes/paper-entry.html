@@ -1,0 +1,16 @@
+{% assign paper = include.paper %}
+{% assign paper_year_string = paper.year | append: '' %}
+{% assign figure = site.data.paper_figures[paper.id] %}
+<article class="publication-item{% if page.section == 'publications' and figure %} publication-item--illustrated{% endif %}" data-kind="{{ paper.kind }}"{% if page.section == 'publications' %} id="pub-{{ paper.id }}"{% endif %}>
+  {% if page.section == 'publications' and figure %}<figure class="publication-figure"><a href="{{ figure.source }}"><img src="{{ figure.path | relative_url }}" width="{{ figure.width }}" height="{{ figure.height }}" alt="{{ figure.alt | escape }}" loading="lazy"></a><figcaption><a href="{{ figure.source }}">{{ figure.caption }} ↗</a>{% if figure.license contains 'CC BY' %} · {{ figure.license }}{% endif %}</figcaption></figure>{% endif %}
+  <div class="publication-body">
+  <div class="paper-meta"><span>{{ paper.venue }}{% unless paper.venue contains paper_year_string %} · {{ paper.year }}{% endunless %}</span><span class="tag">{{ paper.status_label }}</span></div>
+  <h3 class="paper-title"><a href="{% if page.section == 'home' %}{{ '/publications/' | relative_url }}#pub-{{ paper.id }}{% else %}{{ paper.url | relative_url }}{% endif %}">{{ paper.title }}</a></h3>
+  <p class="paper-authors">{{ paper.authors | join: ', ' | replace: 'Guozhang Chen', '<strong>Guozhang Chen</strong>' }}</p>
+  <p class="paper-summary">{{ paper.summary }}</p>
+  <div class="paper-links">
+    <a href="{{ paper.url | relative_url }}">Research story <span aria-hidden="true">↗</span></a>
+    {% for resource in paper.resources %}{% unless resource.label == 'Code' %}<a href="{{ resource.url }}">{{ resource.label }} <span aria-hidden="true">↗</span></a>{% endunless %}{% endfor %}
+  </div>
+  </div>
+</article>

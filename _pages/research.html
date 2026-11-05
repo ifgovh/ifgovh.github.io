@@ -1,0 +1,13 @@
+---
+layout: academic
+title: Research
+permalink: /research/
+section: research
+description: "Architecture, dynamics and computation: the scientific questions connecting our work on brains, learning and artificial intelligence."
+---
+<header class="page-intro"><p class="eyebrow">NeuroAI · Our research</p><h1>{{ site.data.copy.research.headline }}</h1><p>{{ site.data.copy.research.intro }}</p></header>
+<figure class="research-art"><img src="{{ '/assets/images/art/neuroai-embodied.webp' | relative_url }}" width="1672" height="941" alt="Conceptual illustration connecting neural circuits, dynamics and embodied intelligence."><figcaption>Conceptual illustration</figcaption></figure>
+<section class="relationship-overview" id="research-relationship"><span id="architecture"></span><span id="dynamics"></span><span id="computation"></span><span id="computational-neuroscience"></span><span id="brain-inspired-ai"></span><p class="eyebrow">A shared scientific question</p><h2>{{ site.data.copy.research.relationship_title }}</h2><p>{{ site.data.copy.research.relationship }}</p></section>
+<section aria-labelledby="questions-heading"><div class="section-heading"><div><p class="eyebrow">Questions in focus</p><h2 id="questions-heading">Research highlights</h2></div><a class="text-link" href="{{ '/highlights/' | relative_url }}">All highlights ↗</a></div><div class="research-questions">{% for story in site.data.copy.highlights.stories %}<article><h3><a href="{{ '/highlights/' | relative_url }}#question-{{ forloop.index }}">{{ story.title }}</a></h3><p>{{ story.description }}</p></article>{% endfor %}</div></section>
+{% include btorch-feature.html %}
+<div class="callout"><h2>Follow a question across projects.</h2><p>Our <a href="{{ '/highlights/' | relative_url }}">research highlights</a> connect individual results to these longer-term questions.</p></div>

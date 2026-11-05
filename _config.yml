@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Dr. Guozhang Chen (陈国璋）"
+title                    : "Guozhang Chen | Peking University"
 title_separator          : "-"
 name                     : &name "Dr. Guozhang Chen"
-description              : &description "Assistant professor at Peking University"
+description              : &description "Computational neuroscience, neural dynamics and brain-inspired AI at Peking University."
 url                      : https://ifgovh.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "ifgovh/ifgovh.github.io"
@@ -81,13 +81,13 @@ analytics:
 # Site Author
 author:
   name             : "Guozhang Chen"
-  avatar           : "profile.png"
+  avatar           : "guozhang-chen.webp"
   bio              : "Assistant professor at Peking University"
   #location         : "Location"
   employer         : Peking University
   pubmed           : #""
   googlescholar    : "https://scholar.google.com/citations?user=bj356J0AAAAJ&hl=en"
-  email            : guozhang.chen [at] pku.edu.cn
+  email            : guozhang.chen@pku.edu.cn
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -123,6 +123,22 @@ include:
   - _pages
   - files
 exclude:
+  - .work
+  - scripts
+  - docs
+  - _pages/news.html
+  - _pages/archive-layout-with-content.md
+  - _pages/category-archive.html
+  - _pages/collection-archive.html
+  - _pages/cv.md
+  - _pages/markdown.md
+  - _pages/non-menu-page.md
+  - _pages/page-archive.html
+  - _pages/tag-archive.html
+  - _pages/talkmap.html
+  - _pages/talks.html
+  - _pages/teaching.html
+  - _pages/terms.md
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache
@@ -176,16 +192,16 @@ kramdown:
 # Collections
 collections:
   teaching:
-    output: true
+    output: false
     permalink: /:collection/:path/
   publications:
-    output: true
+    output: false
     permalink: /:collection/:path/
   job:
-    output: true
+    output: false
     permalink: /:collection/:path/
   talks:
-    output: true
+    output: false
     permalink: /:collection/:path/
 
 
@@ -196,7 +212,7 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
+      layout: writing
       author_profile: true
       read_time: true
       comments: true
@@ -255,7 +271,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Shanghai
 
 
 # Plugins

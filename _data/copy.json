@@ -1,0 +1,55 @@
+{
+  "home": {
+    "headline": "How does the interplay of neural architecture and dynamics give rise to intelligent computation?",
+    "intro": "I am an Assistant Professor in the School of Computer Science at Peking University. Viewing the brain as a complex dynamical computer, my lab works in NeuroAI at the intersection of computer science, neuroscience, physics, and mathematics to unravel the computational principles of the brain and develop brain-inspired and brain-like computing frameworks. Prior to joining PKU, I conducted postdoctoral research in computational neuroscience with Prof. Wolfgang Maass at Graz University of Technology and doctoral research in neurophysics with Prof. Pulin Gong at the University of Sydney.",
+    "research_intro": "Centered on NeuroAI, our research investigates how the brain's structure, encompassing both its physiology and emergent spatiotemporal dynamics, gives rise to computational function, and translates these coupled mechanisms into brain-inspired and brain-like intelligent systems for vision, sequence learning, robotics, and autonomous driving.",
+    "embodied_ai": "Building on these NeuroAI principles, we are actively exploring brain-inspired and brain-like embodied AI, translating asynchronous spike perception and recurrent neural dynamics into intelligent systems for robotics and autonomous driving."
+  },
+  "research": {
+    "headline": "NeuroAI: Unraveling How Neural Architecture and Dynamics Drive Intelligent Computation",
+    "intro": "Our lab approaches biological and artificial intelligence as a unified problem in NeuroAI. Rather than treating circuit anatomy, population activity, and task performance as separate topics, we study how they interact as a single dynamical system across neuroscience, physics, computer science, and mathematics. Insights into how cortical circuits compute directly guide the design of brain-like intelligent systems, while theoretical and machine learning tools help decode the working principles of the brain.",
+    "relationship_title": "The Core Coupling: Relating Architecture, Dynamics, and Computation",
+    "relationship": "Our central scientific premise is that neural computation emerges from the tight coupling among physiological architecture, emergent dynamics, and functional behavior. Our approach begins by modeling neural networks grounded in biological connectivity and cellular physiology, then analyzes the dynamical structures, such as waves, oscillations, attractors, and criticality, that arise from those circuits. By characterizing the spatiotemporal correlations embedded in these dynamical structures, we uncover the working mechanisms of cortical computation and distill them into mathematical principles for brain-like intelligence."
+  },
+  "highlights": {
+    "intro": "Our research in NeuroAI is organized around three overarching scientific questions that investigate the bidirectional coupling of Architecture ↔ Dynamics ↔ Computation across biological brains and brain-like artificial systems, supported by our open-source simulation and training ecosystem.",
+    "stories": [
+      {
+        "title": "How do biological connectomes and circuit rules shape spatiotemporal dynamics to organize cortical computation?",
+        "description": "Cortical circuits are sparse, heterogeneous graphs rather than uniform layers. Combining data-driven primary visual cortex models, generative latent connectome representations, and spatial spectral theory, we reveal how local excitation-inhibition rules, cellular diversity, and anatomical motifs sculpt traveling waves, input-slaved transients, and flexible condition-dependent spike-order codes that drive robust sensory processing and working memory.",
+        "papers": [
+          "v1-model",
+          "sparse-cortical-codes",
+          "bridging-scales",
+          "neural-heterogeneity",
+          "connectome-to-function"
+        ]
+      },
+      {
+        "title": "How do non-equilibrium dynamics, criticality, and biological plasticity drive efficient learning and adaptive coding?",
+        "description": "Biological networks compute and learn far from equilibrium. We show how modulating ongoing spontaneous activity accelerates active perception, how critical transition states generate superdiffusive attention spotlights and enable strictly local online rules to achieve global credit assignment, and how evolved heterogeneous plasticity and continuous attractor manifolds support rapid, few-shot adaptation.",
+        "papers": [
+          "cola",
+          "attention-dynamics",
+          "spontaneous-computation",
+          "anomalous-learning",
+          "heterogeneous-plasticity",
+          "representation-transfer"
+        ]
+      },
+      {
+        "title": "How can brain-inspired structural priors and asynchronous spike dynamics power scalable AI and embodied intelligence?",
+        "description": "Translating neurophysical principles into machine learning yields architectures that learn from less data and compute with high efficiency. By embedding scale-free spatial hierarchies, hippocampal multiscale positional codes, spectral state-space priors, and recurrent spiking dynamics into modern models, we advance high-resolution diffusion generation, sequence modeling, microsecond stereo depth estimation, and point-cloud-free robotic grasping.",
+        "papers": [
+          "iterative-latent-refinement",
+          "sfa",
+          "hippocampal-gradient",
+          "ssm-inductive-bias",
+          "dynamical-superspace",
+          "spikestereonet",
+          "spikegrasp"
+        ]
+      }
+    ]
+  }
+}

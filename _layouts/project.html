@@ -1,0 +1,41 @@
+---
+layout: academic
+---
+{% assign paper = site.data.papers | where: 'id', page.paper_id | first %}
+{% assign figure = site.data.paper_figures[paper.id] %}
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="{{ '/research/' | relative_url }}">Research</a><span aria-hidden="true"> / </span><a href="{{ '/publications/' | relative_url }}">Publications</a></nav>
+<header class="project-hero">
+  {% assign year_string = paper.year | append: '' %}<p class="eyebrow">{{ paper.venue }}{% unless paper.venue contains year_string %} · {{ paper.year }}{% endunless %} · {{ paper.status_label }}</p>
+  <h1>{{ paper.title }}</h1>
+  <p class="paper-authors">{{ paper.authors | join: ', ' | replace: 'Guozhang Chen', '<strong>Guozhang Chen</strong>' }}</p>
+  <p class="hero-intro">{{ paper.summary }}</p>
+</header>
+<div class="project-layout">
+  <div>
+    <section class="project-section" id="question">
+      <p class="eyebrow">The scientific question</p>
+      <h2>{{ paper.question }}</h2>
+      <p>{{ paper.motivation }}</p>
+    </section>
+    <figure class="project-figure">
+      {% if figure %}<a href="{{ figure.source }}"><img src="{{ figure.path | relative_url }}" width="{{ figure.width }}" height="{{ figure.height }}" alt="{{ figure.alt | escape }}"></a><figcaption><a href="{{ figure.source }}">{{ figure.caption }} ↗</a>{% if figure.license contains 'CC BY' %} · {{ figure.license }}{% endif %}</figcaption>{% else %}<img src="{{ paper.figure | relative_url }}" width="900" height="340" alt="{{ paper.diagram_caption | escape }}"><figcaption>{{ paper.diagram_caption }} Conceptual illustration; not experimental data.</figcaption>{% endif %}
+    </figure>
+    <section class="project-section" id="idea"><p class="eyebrow">The core idea</p><h2>{{ paper.idea_title }}</h2><p>{{ paper.idea }}</p></section>
+    <section class="project-section" id="findings"><p class="eyebrow">What we found</p><h2>{{ paper.finding_title }}</h2><p>{{ paper.finding }}</p></section>
+    {% if paper.version_note %}<p class="callout">{{ paper.version_note }}</p>{% endif %}
+    {% if paper.video %}<section class="project-section"><h2>Watch the explanation</h2><video controls preload="metadata" aria-label="Research demonstration"><source src="{{ paper.video }}" type="video/mp4"></video></section>{% endif %}
+    <section class="project-section" id="reading">
+      <p class="eyebrow">Continue the question</p><h2>Related reading</h2>
+      <ul class="reading-list">{% for related_id in paper.related %}{% assign related = site.data.papers | where: 'id', related_id | first %}<li><a href="{{ related.url | relative_url }}">{{ related.title }}</a><span>{{ related.venue }} · {{ related.year }}</span></li>{% endfor %}</ul>
+      <a class="text-link" href="{{ '/research/' | relative_url }}#research-relationship">Explore our research <span aria-hidden="true">↗</span></a>
+    </section>
+    <section class="project-section project-citation" id="citation"><h2>Cite this work</h2><p id="citation-text">{{ paper.authors | join: ', ' }}. {{ paper.title }}. {{ paper.venue }}{% unless paper.venue contains year_string %}, {{ paper.year }}{% endunless %}.{% if paper.doi %} doi:{{ paper.doi }}.{% endif %}</p><button class="copy-link" type="button" data-copy-citation="citation-text">Copy citation</button><span class="copy-status" data-copy-status role="status" aria-live="polite"></span></section>
+  </div>
+  <aside class="project-resources" aria-labelledby="resources-heading">
+    <p class="eyebrow">Read. Explore. Build.</p><h2 id="resources-heading">Resources</h2>
+    <ul class="resource-list">{% for resource in paper.resources %}{% unless resource.label == 'Code' %}<li><a href="{{ resource.url }}">{{ resource.label }} <span aria-hidden="true">↗</span></a></li>{% endunless %}{% endfor %}</ul>
+    <button class="copy-link" type="button" data-copy-link="{{ paper.url | absolute_url }}">Copy project link</button><span data-copy-status role="status" aria-live="polite"></span>
+    <p class="resource-note">A permanent home for this work, its ideas and research materials.</p>
+    <a class="text-link" href="{{ '/highlights/' | relative_url }}">More research highlights <span aria-hidden="true">↗</span></a>
+  </aside>
+</div>

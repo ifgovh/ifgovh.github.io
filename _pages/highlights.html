@@ -1,0 +1,11 @@
+---
+layout: academic
+title: Research Highlights
+permalink: /highlights/
+section: highlights
+description: "Scientific questions in focus: accessible research stories connecting neural architecture, dynamics and computation."
+---
+<header class="page-intro highlights-intro"><p class="eyebrow">The ideas connecting our work</p><h1>Questions that keep us curious.</h1><p>{{ site.data.copy.highlights.intro }}</p></header>
+<figure class="research-art"><img src="{{ '/assets/images/art/neuroai-embodied.webp' | relative_url }}" width="1672" height="941" alt="Conceptual illustration connecting neural circuits, dynamics and embodied intelligence."><figcaption>Conceptual illustration</figcaption></figure>
+{% for story in site.data.copy.highlights.stories %}<section class="highlight-theme" id="question-{{ forloop.index }}">{% if forloop.index == 2 %}<span id="question-4"></span><span id="question-5"></span>{% elsif forloop.index == 3 %}<span id="question-6"></span>{% endif %}<div class="section-heading"><div><p class="eyebrow">Research question 0{{ forloop.index }}</p><h2>{{ story.title }}</h2></div></div><p class="section-intro">{{ story.description }}</p><div class="highlight-grid">{% for paper_id in story.papers %}{% assign paper = site.data.papers | where: 'id', paper_id | first %}{% assign figure = site.data.paper_figures[paper.id] %}{% assign paper_year_string = paper.year | append: '' %}<article class="highlight-card"><a class="highlight-image" href="{{ paper.url | relative_url }}" tabindex="-1" aria-hidden="true">{% if figure %}<img src="{{ figure.path | relative_url }}" width="{{ figure.width }}" height="{{ figure.height }}" alt="" loading="lazy">{% endif %}</a><p class="figure-note">{% if figure %}<a href="{{ figure.source }}">{{ figure.caption }} ↗</a>{% endif %}</p><p class="paper-meta">{{ paper.venue }}{% unless paper.venue contains paper_year_string %} · {{ paper.year }}{% endunless %} · {{ paper.status_label }}</p><h3><a href="{{ paper.url | relative_url }}">{{ paper.title }}</a></h3><p>{{ paper.summary }}</p><a class="text-link" href="{{ paper.url | relative_url }}">Read the research story ↗</a></article>{% endfor %}</div></section>{% endfor %}
+{% include btorch-feature.html %}

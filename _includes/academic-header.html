@@ -1,0 +1,18 @@
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="site-brand" href="{{ '/' | relative_url }}" aria-label="Guozhang Chen — Home">
+      <span class="brand-name">Guozhang Chen</span>
+      <span class="brand-affiliation">Peking University</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="academic-navigation">
+      <span>Menu</span><span class="menu-icon" aria-hidden="true"><span></span><span></span></span>
+    </button>
+    <nav class="site-nav" id="academic-navigation" aria-label="Main navigation">
+      <a href="{{ '/research/' | relative_url }}"{% if page.section == 'research' %} aria-current="page"{% endif %}>Research</a>
+      <a href="{{ '/publications/' | relative_url }}"{% if page.section == 'publications' %} aria-current="page"{% endif %}>Publications</a>
+      <a href="{{ '/highlights/' | relative_url }}"{% if page.section == 'highlights' %} aria-current="page"{% endif %}>Highlights</a>
+      <a href="{{ '/people/' | relative_url }}"{% if page.section == 'people' %} aria-current="page"{% endif %}>Our Group</a>
+      <a href="{{ '/job/' | relative_url }}"{% if page.section == 'join' or page.section == 'job' %} aria-current="page"{% endif %}>Join us <span aria-hidden="true">↗</span></a>
+    </nav>
+  </div>
+</header>

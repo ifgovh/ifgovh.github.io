@@ -1,43 +1,18 @@
 ---
+layout: academic
 permalink: /
-title: "About me"
-excerpt: "About me"
-author_profile: true
-redirect_from: 
+title: Home
+section: home
+description: "Guozhang Chen at Peking University. Exploring how neural architecture and dynamics give rise to computation, learning and intelligent behavior."
+redirect_from:
   - /about/
   - /about.html
 ---
-
-
-I am currently an Assistant Professor at School of Computer Science, Peking University, dedicated to exploring the computational principles of the brain. I view the brain as an intricate computer with complex dynamics that offers profound insights for the development of brain-inspired and brain-like computing frameworks. 
-
-In my previous role as a postdoctoral researcher with Prof. Wolfgang Maass (the father of spiking neural network and brain-like computation) at Institute of Theoretical Computer Science, Graz University of Technology, I delved into brain-like computation and computational neuroscience. Before that, my doctoral research, conducted at School of Physics, the University of Sydney with Prof. Pulin Gong, focused on neurophysics, an interdisciplinary field bridging physics and neuroscience. <!--Before that, I obtained my master and bachelor degrees at University of Electronic Science and Techology of China.-->
-
-Research Interest
-======
-My primary research interest lies in unraveling the computational principles of the brain, with a specific focus on elucidating the link between the brain's structure, encompassing both its physiology and dynamics, and its computational functions. The intersection of computing, neuroscience and physics serves as my playground.
-
-In addition, my research interest extends to showcasing the remarkable capabilities of the brain in brain-inspired and brain-like intelligent systems, specifically in areas like autonomous driving and robotics.
-
-<!--
-My approach involves modeling neural networks with physiological structures of the brain, followed by an analysis of the dynamic structures emerged from these physiological structures. This exploration extends to understanding the spatiotemporal correlation that arises from these dynamic structures, with the ultimate goal of unveiling the working mechanisms of the brain embedded in these correlated structures. To achieve this, I employ a multidisciplinary approach that intersects the fields of neuroscience, physics, computer science, and mathematics. 
--->
-
-Hiring info
-======
-I am currently looking for talented PhD and undergraduate intern students to start my lab. Please see more at [Job Opportunities](https://ifgovh.github.io/job).
-
-Selected Publications
-======
-1. Chen, Guozhang, Franz Scherr, and Wolfgang Maass. "[Data-based large-scale models provide a window into the organization of cortical computations](https://www.biorxiv.org/content/10.1101/2023.04.28.538662v3.abstract)." bioRxiv (2023): 2023-04.
-
-2. Chen, Guozhang, Franz Scherr, and Wolfgang Maass. "[A data-based large-scale model for primary visual cortex enables brain-like robust and versatile visual processing](https://www.science.org/doi/full/10.1126/sciadv.abq7592)." Science Advances 8.44 (2022): eabq7592.
-
-3. Chen, Guozhang, and Pulin Gong. "[A spatiotemporal mechanism of visual attention: Superdiffusive motion and theta oscillations of neural population activity patterns.](https://www.science.org/doi/full/10.1126/sciadv.abl4995)" Science Advances 8.16 (2022): eabl4995.
-
-4. Chen, Guozhang, Cheng Kevin Qu, and Pulin Gong. "[Anomalous diffusion dynamics of learning in deep neural networks.](https://www.sciencedirect.com/science/article/pii/S0893608022000296)" Neural Networks 149 (2022): 18-28.
-
-5. Chen, Guozhang, and Pulin Gong. "[Computing by modulating spontaneous cortical activity patterns as a mechanism of active visual processing.](https://www.nature.com/articles/s41467-019-12918-8)" Nature communications 10.1 (2019): 4915.
-
-<!-- Check my [google scholar](https://scholar.google.com/citations?user=bj356J0AAAAJ&hl=en) to see more.
--->
+<section class="hero">
+<div><p class="eyebrow">NeuroAI · Neuroscience · Physics</p><h1 class="hero-name">Guozhang Chen</h1><h2 class="hero-question">{{ site.data.copy.home.headline }}</h2><p class="hero-intro">{{ site.data.copy.home.intro }}</p><div class="profile-links"><a href="mailto:guozhang.chen@pku.edu.cn">Email ↗</a><a href="{{ site.author.googlescholar }}">Google Scholar ↗</a><a href="https://github.com/ifgovh">GitHub ↗</a><a href="{{ site.author.orcid }}">ORCID ↗</a></div></div>
+<figure class="portrait"><img class="profile-photo" src="{{ '/images/guozhang-chen.webp' | relative_url }}" width="800" height="1199" alt="Guozhang Chen"><figcaption>Guozhang Chen · Peking University</figcaption></figure>
+</section>
+<section aria-labelledby="research-heading"><div class="section-heading"><div><p class="eyebrow">Research interests · NeuroAI</p><h2 id="research-heading">Architecture ↔ Dynamics ↔ Computation</h2></div><a class="text-link" href="{{ '/research/' | relative_url }}">Explore our research ↗</a></div><figure class="research-art"><img src="{{ '/assets/images/art/neuroai-embodied.webp' | relative_url }}" width="1672" height="941" alt="Conceptual illustration connecting neural circuits, dynamics and embodied intelligence."><figcaption>Conceptual illustration of our research interests</figcaption></figure><p class="section-intro">{{ site.data.copy.home.research_intro }}</p>{% if site.data.copy.home.embodied_ai %}<p class="section-intro">{{ site.data.copy.home.embodied_ai }}</p>{% endif %}</section>
+<section aria-labelledby="recent-heading"><div class="section-heading"><div><p class="eyebrow">Research &amp; publications</p><h2 id="recent-heading">Recent work</h2></div><a class="text-link" href="{{ '/publications/' | relative_url }}">All publications ↗</a></div><div class="recent-list">{% for paper in site.data.papers limit:8 %}<article class="recent-paper"><span class="recent-year">{{ paper.year }}</span><div><h3><a href="{{ '/publications/' | relative_url }}#pub-{{ paper.id }}">{{ paper.title }}</a></h3><p>{{ paper.authors | join: ', ' | replace: 'Guozhang Chen', '<strong>Guozhang Chen</strong>' }} · <span>{{ paper.venue }}</span>{% if paper.kind == 'preprint' %} · Preprint{% elsif paper.kind == 'workshop' %} · Workshop{% endif %}</p></div></article>{% endfor %}</div></section>
+{% include btorch-feature.html %}
+<section class="callout" aria-labelledby="join-heading"><p class="eyebrow">Join the conversation</p><h2 id="join-heading">Work at the intersection.</h2><p>We welcome students with backgrounds in computer science, neuroscience, physics, mathematics and related fields.</p><a class="text-link" href="{{ '/job/' | relative_url }}">PhD &amp; internship opportunities ↗</a></section>

@@ -1,0 +1,252 @@
+{
+  "connectome-to-function": {
+    "path": "/assets/images/papers/connectome-to-function.webp",
+    "alt": "Connectomes encoded in a structural latent space related to reservoir computation.",
+    "caption": "Figure 1 from the preprint",
+    "source": "https://arxiv.org/abs/2609.06093",
+    "original_image": "https://arxiv.org/html/2609.06093v1/Teaser.png",
+    "license": "Preprint; see linked source for terms",
+    "width": 395,
+    "height": 304
+  },
+  "decoding-microcircuits": {
+    "path": "/assets/images/papers/decoding-microcircuits.webp",
+    "alt": "Overall model structure for decoding and synthesizing cortical microcircuits.",
+    "caption": "Figure 1 from the preprint",
+    "source": "https://arxiv.org/abs/2506.11062",
+    "original_image": "https://arxiv.org/html/2506.11062v2/overall_structure.png",
+    "license": "Preprint; see linked source for terms",
+    "width": 939,
+    "height": 273
+  },
+  "sfa": {
+    "path": "/assets/images/papers/sfa.webp",
+    "alt": "Scale-free attention: motivation and multiscale construction.",
+    "caption": "Figure 1 from the preprint",
+    "source": "https://arxiv.org/abs/2611.00027",
+    "original_image": "https://arxiv.org/html/2611.00027v1/main_overview_method.png",
+    "license": "Preprint; see linked source for terms",
+    "width": 756,
+    "height": 582
+  },
+  "vision-reservoir": {
+    "path": "/assets/images/papers/vision-reservoir.webp",
+    "alt": "The Vision Reservoir architecture.",
+    "caption": "Figure 2 from the preprint",
+    "source": "https://arxiv.org/abs/2112.13545",
+    "original_image": "https://arxiv.org/html/2112.13545v2/images/model.png",
+    "license": "Preprint; see linked source for terms",
+    "width": 1600,
+    "height": 329
+  },
+  "anomalous-learning": {
+    "path": "/assets/images/papers/anomalous-learning.webp",
+    "alt": "Schematic of an optimization trajectory through a non-convex loss landscape.",
+    "caption": "Figure 1 from the preprint",
+    "source": "https://arxiv.org/abs/2009.10588",
+    "original_image": "https://arxiv.org/html/2009.10588v2/schematic_landscape.png",
+    "license": "Preprint; see linked source for terms",
+    "width": 1166,
+    "height": 439
+  },
+  "spontaneous-computation": {
+    "path": "/assets/images/papers/spontaneous-computation.webp",
+    "alt": "Spontaneous neural activity and stimulus modulation in cortical processing.",
+    "caption": "Figure 1 from the original paper",
+    "source": "https://www.nature.com/articles/s41467-019-12918-8",
+    "original_image": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-019-12918-8/MediaObjects/41467_2019_12918_Fig1_HTML.png",
+    "license": "CC BY 4.0",
+    "width": 685,
+    "height": 663
+  },
+  "representation-transfer": {
+    "path": "/assets/images/papers/representation-transfer.webp",
+    "alt": "Concept, pretraining and emergent neural manifolds for representation transfer.",
+    "caption": "Figure 1 from the original paper",
+    "source": "https://www.nature.com/articles/s42003-026-09938-8",
+    "original_image": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs42003-026-09938-8/MediaObjects/42003_2026_9938_Fig1_HTML.png",
+    "license": "CC BY-NC-ND 4.0",
+    "width": 685,
+    "height": 816
+  },
+  "attention-dynamics": {
+    "path": "/assets/images/papers/attention-dynamics.webp",
+    "alt": "Neural circuit and superdiffusive attention mechanism.",
+    "caption": "Figure 1 from the original paper",
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9032965/",
+    "original_image": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/0116/9032965/7be09a660b21/sciadv.abl4995-f1.jpg",
+    "license": "CC BY-NC 4.0",
+    "width": 700,
+    "height": 322
+  },
+  "v1-model": {
+    "path": "/assets/images/papers/v1-model.webp",
+    "alt": "Data-based model of mouse primary visual cortex.",
+    "caption": "Figure 1 from the original paper",
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9629744/",
+    "original_image": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/e23a/9629744/8dc0debe0c5a/sciadv.abq7592-f1.jpg",
+    "license": "CC BY 4.0",
+    "width": 750,
+    "height": 908
+  },
+  "ssm-inductive-bias": {
+    "path": "/assets/images/papers/ssm-inductive-bias.webp",
+    "alt": "Overview of state-space model inductive bias and task-dependent initialization.",
+    "caption": "Figure 1 from the preprint",
+    "source": "https://arxiv.org/abs/2509.20789",
+    "original_image": "https://arxiv.org/html/2509.20789v5/intro/intro.png",
+    "license": "Preprint; see linked source for terms",
+    "width": 1600,
+    "height": 638
+  },
+  "evolutionary-learning": {
+    "path": "/assets/images/papers/evolutionary-learning.webp",
+    "alt": "Network architecture and evolutionary learning mechanism.",
+    "caption": "Figure 1 from the original paper",
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12033925/",
+    "original_image": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/ba2e/12033925/f784a31ebdc4/gr1.jpg",
+    "license": "CC BY-NC 4.0",
+    "width": 743,
+    "height": 599
+  },
+  "cola": {
+    "path": "/assets/images/papers/cola.webp",
+    "alt": "Comparison of credit assignment paradigms and empirical memory and accuracy trade-offs.",
+    "caption": "Figure 1 from the original paper",
+    "source": "https://proceedings.mlr.press/v306/wang26be.html",
+    "original_image": "https://proceedings.mlr.press/v306/wang26be.html",
+    "license": "Conference proceedings; see linked source for terms",
+    "width": 580,
+    "height": 516
+  },
+  "spikestereonet": {
+    "path": "/assets/images/papers/spikestereonet.webp",
+    "alt": "Synthetic and real spike stereo data training and evaluation pipeline.",
+    "caption": "Figure 1 from the original paper",
+    "source": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/136a45cd9b841bf785625709a19c6508-Abstract-Conference.html",
+    "original_image": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/136a45cd9b841bf785625709a19c6508-Abstract-Conference.html",
+    "license": "Conference proceedings; see linked source for terms",
+    "width": 956,
+    "height": 554
+  },
+  "heterogeneous-plasticity": {
+    "path": "/assets/images/papers/heterogeneous-plasticity.webp",
+    "alt": "Framework for discovering heterogeneous synaptic plasticity rules.",
+    "caption": "Figure 1 from the original paper",
+    "source": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/dc1c478d31a5ed977309b6bec2d8c339-Abstract-Conference.html",
+    "original_image": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/dc1c478d31a5ed977309b6bec2d8c339-Abstract-Conference.html",
+    "license": "Conference proceedings; see linked source for terms",
+    "width": 960,
+    "height": 502
+  },
+  "sparse-cortical-codes": {
+    "path": "/assets/images/papers/sparse-cortical-codes.webp",
+    "alt": "Conceptual overview of sparse, condition-dependent spike-order computation.",
+    "caption": "Figure 1 from the preprint",
+    "source": "https://www.biorxiv.org/content/10.64898/2026.05.13.724761v1",
+    "original_image": "https://www.biorxiv.org/content/biorxiv/early/2026/05/15/2026.05.13.724761/F1.large.jpg",
+    "license": "CC BY-NC-ND 4.0",
+    "width": 1152,
+    "height": 1280
+  },
+  "cortical-computations": {
+    "path": "/assets/images/papers/cortical-computations.webp",
+    "alt": "Structure and components of the data-based cortical microcircuit model.",
+    "caption": "Figure 1 from the preprint",
+    "source": "https://www.biorxiv.org/content/10.1101/2023.04.28.538662v3",
+    "original_image": "https://www.biorxiv.org/content/biorxiv/early/2023/11/28/2023.04.28.538662/F1.large.jpg",
+    "license": "CC BY-NC-ND 4.0",
+    "width": 1280,
+    "height": 1110
+  },
+  "interpretable-connectome": {
+    "path": "/assets/images/papers/interpretable-connectome.webp",
+    "alt": "Encoder of a generative framework for connectome representations.",
+    "caption": "Figure 1a from the preprint",
+    "source": "https://arxiv.org/abs/2505.13011",
+    "original_image": "https://arxiv.org/html/2505.13011v2/encoder.png",
+    "license": "Preprint; see linked source for terms",
+    "width": 941,
+    "height": 241
+  },
+  "hippocampal-gradient": {
+    "path": "/assets/images/papers/hippocampal-gradient.webp",
+    "alt": "Earlier preprint model architecture and context-dependent task design.",
+    "caption": "Figure 2 from the earlier preprint",
+    "source": "https://arxiv.org/abs/2506.04943",
+    "original_image": "https://arxiv.org/html/2506.04943v1/images/FFmodel3.png",
+    "license": "Earlier preprint; see linked source for terms",
+    "width": 1600,
+    "height": 687
+  },
+  "softmax-attention-complexity": {
+    "path": "/assets/images/papers/arxiv-2611-06055.webp",
+    "alt": "A score window retaining near-maximal keys while discarding a bounded tail.",
+    "caption": "Figure 1 from the preprint",
+    "source": "https://arxiv.org/abs/2611.06055",
+    "original_image": "https://arxiv.org/pdf/2611.06055v1",
+    "license": "Preprint; see linked source for terms",
+    "width": 1256,
+    "height": 309
+  },
+  "bridging-scales": {
+    "path": "/assets/images/papers/bridging-scales.webp",
+    "alt": "Spatial network structure and connection statistics.",
+    "caption": "Figure 1 from the paper",
+    "source": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/5f63999aa6b4011a3615c2508c622821-Abstract-Conference.html",
+    "original_image": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/5f63999aa6b4011a3615c2508c622821-Abstract-Conference.html",
+    "license": "Author-supplied PDF; see source for terms",
+    "width": 1010,
+    "height": 500
+  },
+  "spikegrasp": {
+    "path": "/assets/images/papers/spikegrasp.webp",
+    "alt": "SpikeGrasp architecture for stereo spike-based grasp detection.",
+    "caption": "Figure 1 from the author-supplied manuscript; earlier arXiv version withdrawn",
+    "source": "https://arxiv.org/abs/2510.10602",
+    "original_image": "https://arxiv.org/abs/2510.10602",
+    "license": "Author-supplied PDF; see source for terms",
+    "width": 1006,
+    "height": 380
+  },
+  "dynamical-superspace": {
+    "path": "/assets/images/papers/dynamical-superspace.webp",
+    "alt": "Dynamical superspace of neural computing.",
+    "caption": "Figure 1 from the published paper",
+    "source": "https://link.springer.com/article/10.1007/s11571-026-10470-y",
+    "original_image": "https://link.springer.com/article/10.1007/s11571-026-10470-y",
+    "license": "Author-supplied PDF; see source for terms",
+    "width": 920,
+    "height": 460
+  },
+  "neural-heterogeneity": {
+    "path": "/assets/images/papers/neural-heterogeneity.webp",
+    "alt": "Spatially extended spiking networks and neuronal diversity.",
+    "caption": "Figure 1 from the published paper",
+    "source": "https://www.science.org/doi/10.1126/sciadv.adr3903",
+    "original_image": "https://www.science.org/doi/10.1126/sciadv.adr3903",
+    "license": "Author-supplied PDF; see source for terms",
+    "width": 990,
+    "height": 890
+  },
+  "single-neuron-spectral-complexity": {
+    "path": "/assets/images/papers/single-neuron-spectral-complexity.webp",
+    "alt": "Overview of the Spectral Complexity Index.",
+    "caption": "Figure 1 from the preprint",
+    "source": "https://www.biorxiv.org/content/10.64898/2026.11.04.764153v1",
+    "original_image": "https://www.biorxiv.org/content/10.64898/2026.11.04.764153v1",
+    "license": "Author-supplied PDF; see source for terms",
+    "width": 920,
+    "height": 600
+  },
+  "iterative-latent-refinement": {
+    "path": "/assets/images/papers/iterative-latent-refinement.webp",
+    "alt": "Overview of iterative latent refinement for offline goal-conditioned reinforcement learning.",
+    "caption": "Figure 1 from the paper",
+    "source": "https://neurips.cc/virtual/2026/poster/154947",
+    "original_image": "https://neurips.cc/virtual/2026/poster/154947",
+    "license": "Author-supplied PDF; see source for terms",
+    "width": 1010,
+    "height": 352
+  }
+}

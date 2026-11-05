@@ -1,0 +1,17 @@
+{% assign contact_email = site.author.email | replace: ' [at] ', '@' %}
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-identity">
+      <a class="footer-name" href="{{ '/' | relative_url }}">Guozhang Chen <span lang="zh">陈国璋</span></a>
+      <p>School of Computer Science · Peking University</p>
+      <a href="mailto:{{ contact_email }}">{{ contact_email }}</a>
+    </div>
+    <div class="footer-links" aria-label="Academic profiles">
+      {% if site.author.googlescholar %}<a href="{{ site.author.googlescholar | escape }}">Google Scholar <span aria-hidden="true">↗</span></a>{% endif %}
+      {% if site.author.github %}<a href="https://github.com/{{ site.author.github | escape }}">GitHub <span aria-hidden="true">↗</span></a>{% endif %}
+      <a href="https://github.com/Criticality-Cognitive-Computation-Lab">Group GitHub <span aria-hidden="true">↗</span></a>
+      {% if site.author.orcid %}<a href="{{ site.author.orcid | escape }}">ORCID <span aria-hidden="true">↗</span></a>{% endif %}
+    </div>
+  </div>
+  <div class="wrap footer-bottom"><span>Beijing, China</span><div><a href="{{ '/year-archive/' | relative_url }}">Writing</a><span aria-hidden="true"> · </span><a href="{{ '/feed.xml' | relative_url }}">RSS feed</a></div></div>
+</footer>

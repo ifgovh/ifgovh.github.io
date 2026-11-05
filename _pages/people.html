@@ -1,0 +1,18 @@
+---
+layout: academic
+title: Our Group
+permalink: /people/
+section: people
+description: "Meet Guozhang Chen and our students at Peking University."
+---
+<header class="page-intro"><p class="eyebrow">People</p><h1>Our Group</h1><p>Different backgrounds, shared scientific questions.</p><a class="text-link" href="https://github.com/Criticality-Cognitive-Computation-Lab">Group GitHub ↗</a></header>
+<section aria-labelledby="pi-heading"><h2 id="pi-heading" class="section-label">Principal investigator</h2><div class="pi-profile"><img src="{{ '/images/guozhang-chen.webp' | relative_url }}" width="800" height="1199" alt="Guozhang Chen"><div><h3>Guozhang Chen <span class="chinese-name" lang="zh">陈国璋</span></h3><p>Assistant Professor<br>School of Computer Science, Peking University</p><a href="mailto:guozhang.chen@pku.edu.cn">guozhang.chen@pku.edu.cn</a><div class="profile-links"><a href="{{ site.author.googlescholar }}">Google Scholar ↗</a><a href="https://github.com/ifgovh">GitHub ↗</a></div></div></div></section>
+<section class="people-students" aria-labelledby="students-heading">
+  <div class="section-heading"><h2 id="students-heading">Students</h2><span class="eyebrow">Peking University</span></div>
+  {% assign phd_students = site.data.people | where: 'role', 'PhD student' %}
+  {% assign masters_students = site.data.people | where: 'role', "Master's student" %}
+  <section class="student-group" aria-labelledby="phd-heading"><h3 id="phd-heading">PhD Students</h3><div class="person-grid">{% for person in phd_students %}<article class="person-card"><h4>{% if person.name_en != '' %}{{ person.name_en }} <span lang="zh">({{ person.name_zh }})</span>{% else %}<span lang="zh">{{ person.name_zh }}</span>{% endif %}</h4></article>{% endfor %}</div></section>
+  <section class="student-group" aria-labelledby="masters-heading"><h3 id="masters-heading">Master's Students</h3><div class="person-grid">{% for person in masters_students %}<article class="person-card"><h4>{% if person.name_en != '' %}{{ person.name_en }} <span lang="zh">({{ person.name_zh }})</span>{% else %}<span lang="zh">{{ person.name_zh }}</span>{% endif %}</h4></article>{% endfor %}</div></section>
+</section>
+<section aria-labelledby="former-heading"><div class="section-heading"><h2 id="former-heading">Former Students</h2></div><div class="person-grid">{% for person in site.data.former_students %}<article class="person-card"><h3>{% if person.name_en != '' %}{{ person.name_en }}{% if person.name_zh != '' %} <span lang="zh">({{ person.name_zh }})</span>{% endif %}{% else %}<span lang="zh">{{ person.name_zh }}</span>{% endif %}</h3><p>{{ person.current }}</p></article>{% endfor %}</div></section>
+<div class="callout"><h2>Curious about joining us?</h2><p>Explore our <a href="{{ '/research/' | relative_url }}">research questions</a> and <a href="{{ '/job/' | relative_url }}">student opportunities</a>.</p></div>

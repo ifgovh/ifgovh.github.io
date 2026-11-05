@@ -1,0 +1,10 @@
+{
+  "tagline": "Brain-inspired differentiable PyTorch toolkit for neuromorphic and computational neuroscience research.",
+  "description": "BTorch is our lab's flagship open-source Python framework, evolved from SpikingJelly and influenced by BrainState, for building, simulating, and training recurrent spiking neural networks and biologically grounded circuit models directly in native PyTorch.",
+  "purpose": "BTorch provides a unified software substrate for our NeuroAI program, connecting sparse connectome-style architectures and heterogeneous neuron-synapse dynamics to scalable gradient-based and local learning.",
+  "capabilities": [
+    "Recurrent spiking neural network modeling with heterogeneous cellular parameters and stateful neuron and synapse modules using explicit buffer-managed memory.",
+    "Support for sparse and connectome-style network topologies alongside integrated analysis tools for dynamical criticality and Lyapunov spectra.",
+    "Native PyTorch training integration including torch.compile compatibility, gradient checkpointing, truncated backpropagation through time, and ONNX export."
+  ]
+}

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="{{ page.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% assign page_description = page.description | default: page.excerpt | default: site.description | strip_html | normalize_whitespace %}
+  {% assign canonical_url = page.url | replace: 'index.html', '' | absolute_url %}
+  {% capture academic_title %}{% if page.section == 'home' %}Guozhang Chen · Peking University{% else %}{{ page.title }} · Guozhang Chen{% endif %}{% endcapture %}
+  <title>{{ academic_title | strip | escape }}</title>
+  <meta name="description" content="{{ page_description | escape }}">
+  <meta name="author" content="Guozhang Chen">
+  <meta name="theme-color" content="#faf9f6">
+  <link rel="canonical" href="{{ canonical_url }}">
+  <meta property="og:type" content="{% if page.collection == 'posts' %}article{% else %}website{% endif %}">
+  <meta property="og:title" content="{{ academic_title | strip | escape }}">
+  <meta property="og:description" content="{{ page_description | escape }}">
+  <meta property="og:url" content="{{ canonical_url }}">
+  <meta property="og:site_name" content="Guozhang Chen">
+  {% assign share_image = page.image | default: '/images/guozhang-chen.webp' %}
+  <meta property="og:image" content="{{ share_image | absolute_url }}">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23862237'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Georgia,serif' font-size='38' fill='%23faf9f6'%3EG%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="{{ '/assets/css/academic.css' | relative_url }}">
+  <link rel="alternate" type="application/atom+xml" title="Guozhang Chen — Writing" href="{{ '/feed.xml' | relative_url }}">
+  <script src="{{ '/assets/js/academic.js' | relative_url }}" defer></script>
+</head>
+<body class="academic-site{% if page.section %} section-{{ page.section | escape }}{% endif %}">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  {% include academic-header.html %}
+  <main id="main-content" class="site-main wrap">
+    {{ content }}
+  </main>
+  {% include academic-footer.html %}
+</body>
+</html>

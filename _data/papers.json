@@ -1,0 +1,1311 @@
+[
+  {
+    "id": "iterative-latent-refinement",
+    "title": "Iterative Latent Refinement for Value Learning in Offline Goal-Conditioned RL",
+    "authors": [
+      "Daoxin Li",
+      "Songcheng Xu",
+      "Guozhang Chen"
+    ],
+    "year": 2026,
+    "venue": "NeurIPS 2026",
+    "doi": null,
+    "theme": "computation",
+    "kind": "conference",
+    "status_label": "Accepted",
+    "summary": "We study iterative latent refinement as an architectural replacement for the feedforward value or critic backbone used by existing offline GCRL algorithms.",
+    "question": "Iterative Latent Refinement for Value Learning in Offline Goal-Conditioned RL",
+    "motivation": "Offline goal-conditioned reinforcement learning enables goal reaching from static datasets, but the learned value, critic, or compatibility score must support both long horizon reachability inference and offline policy extraction.",
+    "idea_title": "Iterative Latent Refinement",
+    "idea": "Instead of emitting a score after a single feedforward computation, the network repeatedly updates a latent representation using shared recurrent update weights and lightweight step specific parameters before exposing the final actor facing signal.",
+    "finding_title": "Evaluated OGBench Datasets",
+    "finding": "On the evaluated OGBench datasets, iterative refinement variants improve performance across several algorithms without changing their losses, data, actors configuration.",
+    "diagram": [
+      "Offline goal-conditioned RL",
+      "Iterative latent refinement",
+      "Value or compatibility score"
+    ],
+    "diagram_icons": [
+      "memory",
+      "learning",
+      "transfer"
+    ],
+    "diagram_caption": "Overview of iterative latent refinement for offline goal-conditioned reinforcement learning.",
+    "related": [
+      "ssm-inductive-bias",
+      "representation-transfer"
+    ],
+    "resources": [
+      {
+        "label": "Conference page",
+        "url": "https://neurips.cc/virtual/2026/poster/154947"
+      },
+      {
+        "label": "OpenReview",
+        "url": "https://openreview.net/forum?id=9ifoNWFpH3"
+      }
+    ],
+    "version_note": "Daoxin Li and Songcheng Xu contributed equally.",
+    "url": "/research/iterative-latent-refinement/",
+    "figure": "/assets/images/research/iterative-latent-refinement.svg"
+  },
+  {
+    "id": "single-neuron-spectral-complexity",
+    "title": "A Kernel-Spectral Index for Single-Neuron Input-Output Complexity",
+    "authors": [
+      "Zixuan Huang",
+      "Wenjie Chen",
+      "Bo Lei",
+      "Guozhang Chen"
+    ],
+    "year": 2026,
+    "venue": "bioRxiv",
+    "doi": "10.64898/2026.11.04.764153",
+    "theme": "architecture",
+    "summary": "The Spectral Complexity Index provides an interpretable, white-box kernel measure of single-neuron input-output computation at a fraction of surrogate-model cost.",
+    "question": "How can single-neuron computational complexity be quantified without black-box surrogate networks?",
+    "motivation": "Cortical pyramidal neurons perform deep nonlinear input-output transformations, but measuring their complexity by fitting multi-layer artificial neural networks is computationally costly and difficult to interpret.",
+    "idea_title": "White-Box Kernel-Spectral Complexity Measure",
+    "idea": "We introduce the Spectral Complexity Index (SCI), which embeds presynaptic spike histories into an explicit kernel geometry and counts the ordered spectral modes needed to explain somatic responses.",
+    "finding_title": "Fast Cross-Species Separation and Stability",
+    "finding": "Across 35 biophysical human and mouse cortical neuron models, SCI separates the two species, aligns closely with deep-network complexity rankings, remains robust to perturbations, and cuts runtime tenfold.",
+    "diagram": [
+      "Presynaptic Input Histories",
+      "Kernel-Spectral Mode Energy",
+      "White-Box Neuron Complexity"
+    ],
+    "diagram_icons": [
+      "spikes",
+      "spectrum",
+      "hierarchy"
+    ],
+    "diagram_caption": "Kernel-spectral decomposition of presynaptic histories quantifies how many modes drive somatic output energy.",
+    "related": [
+      "neural-heterogeneity",
+      "bridging-scales"
+    ],
+    "kind": "preprint",
+    "status_label": "Preprint",
+    "resources": [
+      {
+        "label": "Preprint",
+        "url": "https://www.biorxiv.org/content/10.64898/2026.11.04.764153v1"
+      }
+    ],
+    "version_note": "",
+    "url": "/research/single-neuron-spectral-complexity/",
+    "figure": "/assets/images/research/single-neuron-spectral-complexity.svg"
+  },
+  {
+    "id": "softmax-attention-complexity",
+    "title": "Softmax Attention with Any Temperature in Fixed Dimension: Matching the Best Known Maximum-Inner-Product Bounds",
+    "authors": [
+      "Zixuan Huang",
+      "Guozhang Chen"
+    ],
+    "year": 2026,
+    "venue": "arXiv",
+    "doi": "10.48550/arXiv.2611.06055",
+    "theme": "computation",
+    "summary": "An algorithmic complexity analysis establishes faster subquadratic softmax attention bounds in fixed dimensions across arbitrary positive temperatures, matching maximum-inner-product limits.",
+    "question": "What are the fundamental time-complexity limits of exact-temperature softmax attention in fixed dimensions?",
+    "motivation": "Direct softmax attention compares all query-key pairs in quadratic time, creating a fundamental scalability bottleneck for long-context language, vision, and scientific AI models.",
+    "idea_title": "Polylogarithmic-Error Fixed-Dimension Attention Algorithm",
+    "idea": "For any fixed head dimension, we design an approximation algorithm whose polylogarithmic dependence on coordinate magnitudes and inverse error supports arbitrary positive temperatures, alongside a reduction from batch maximum inner product.",
+    "finding_title": "Matching Best Known Inner-Product Bounds",
+    "finding": "The algorithm improves the previous fixed-dimension upper bound to match the best known batch maximum-inner-product bound in each fixed dimension, achieving near-linear runtime in dimensions two and three while reducing integer batch maximum inner product computation to a single attention call.",
+    "diagram": [
+      "Fixed-Dimension Queries/Keys",
+      "Any-Temperature Approximation",
+      "Subquadratic Attention Bound"
+    ],
+    "diagram_icons": [
+      "grid",
+      "hierarchy",
+      "learning"
+    ],
+    "diagram_caption": "Geometric query-key structure in fixed dimension enables subquadratic attention across arbitrary positive temperatures.",
+    "related": [
+      "sfa",
+      "ssm-inductive-bias"
+    ],
+    "kind": "preprint",
+    "status_label": "Preprint",
+    "resources": [
+      {
+        "label": "Preprint",
+        "url": "https://arxiv.org/abs/2611.06055"
+      }
+    ],
+    "version_note": "",
+    "url": "/research/softmax-attention-complexity/",
+    "figure": "/assets/images/research/softmax-attention-complexity.svg"
+  },
+  {
+    "id": "sfa",
+    "title": "SFA: A Statistical Physics-Inspired Diffusion Transformer for Efficient and High-Quality Image Generation",
+    "authors": [
+      "Zixuan Huang",
+      "Tianhao You",
+      "Guozhang Chen"
+    ],
+    "year": 2026,
+    "venue": "arXiv",
+    "doi": "10.48550/arXiv.2611.00027",
+    "theme": "architecture",
+    "summary": "Scale-Free Attention uses a statistical physics-inspired spatial hierarchy to accelerate high-resolution diffusion transformers while improving image generation quality.",
+    "question": "Can scale-free spatial hierarchies make diffusion attention both fast and accurate?",
+    "motivation": "Full self-attention scales quadratically with token count, creating a severe computational bottleneck for high-resolution image generation in diffusion transformers.",
+    "idea_title": "Hierarchical Scale-Free Token Aggregation",
+    "idea": "Inspired by scale-free laws in statistical physics, SFA preserves fine-grained local token interactions while summarizing distant regions at progressively coarser scales through mean pooling and token-count correction.",
+    "finding_title": "Log-Linear Complexity and Superior Quality",
+    "finding": "SFA reduces forward and backward attention complexity to O(N log N), delivering multi-hundred-fold kernel speedups at high token counts while outperforming full attention on ImageNet generation quality.",
+    "diagram": [
+      "Fine Local Token Window",
+      "Coarse Multiscale Pooling",
+      "Unified Scale-Free Softmax"
+    ],
+    "diagram_icons": [
+      "grid",
+      "hierarchy",
+      "vision"
+    ],
+    "diagram_caption": "Fine local interactions combine with progressively pooled distant regions under one shared attention distribution.",
+    "related": [
+      "hippocampal-gradient",
+      "ssm-inductive-bias"
+    ],
+    "kind": "preprint",
+    "status_label": "Preprint",
+    "resources": [
+      {
+        "label": "Preprint",
+        "url": "https://arxiv.org/abs/2611.00027"
+      }
+    ],
+    "version_note": "",
+    "url": "/research/sfa/",
+    "figure": "/assets/images/research/sfa.svg"
+  },
+  {
+    "id": "connectome-to-function",
+    "title": "Connectome-to-Function: Conditional Generative Latent Representations for Reservoir Computing",
+    "authors": [
+      "Zhuolin Yu",
+      "Xingyu Liu",
+      "Yuanhao Jia",
+      "Yunhang Xiao",
+      "Hairuo Xue",
+      "Feihan Sun",
+      "Guozhang Chen"
+    ],
+    "year": 2026,
+    "venue": "arXiv",
+    "doi": "10.48550/arXiv.2609.06093",
+    "theme": "architecture",
+    "summary": "A conditional generative latent model compresses sparse connectomes to link synaptic graph motifs directly with reservoir computing capacities.",
+    "question": "How do specific synaptic connectivity motifs govern distinct computational capacities?",
+    "motivation": "Brain connectomes are sparse, high-dimensional, and sensitive to local variation, making hand-crafted descriptors insufficient for both circuit generation and functional prediction.",
+    "idea_title": "Conditional Latent Connectome Encoding",
+    "idea": "The framework encodes connectome graphs into a compact latent space conditioned on node-level attributes, reconstructing observed wiring and synthesizing candidate circuits for reservoir computing evaluation.",
+    "finding_title": "Task-Specific Structural Signatures",
+    "finding": "The latent space captures functional variation across reservoir-computing experiments, and interpretability analysis shows that in the studied examples, memory performance is associated with reciprocal recurrent connectivity whereas prediction and classification are more strongly associated with recurrent network spectral properties.",
+    "diagram": [
+      "Observed Connectome Graph",
+      "Conditional Latent Space",
+      "Reservoir Task Mechanics"
+    ],
+    "diagram_icons": [
+      "network",
+      "latent",
+      "memory"
+    ],
+    "diagram_caption": "Connectome graphs map into a conditional latent space that links wiring motifs to function.",
+    "related": [
+      "decoding-microcircuits",
+      "interpretable-connectome"
+    ],
+    "kind": "preprint",
+    "status_label": "Preprint",
+    "resources": [
+      {
+        "label": "Preprint",
+        "url": "https://arxiv.org/abs/2609.06093"
+      }
+    ],
+    "version_note": "",
+    "url": "/research/connectome-to-function/",
+    "figure": "/assets/images/research/connectome-to-function.svg"
+  },
+  {
+    "id": "cola",
+    "title": "Global Credit Assignment via Dynamical Criticality",
+    "authors": [
+      "Wentao Wang",
+      "Keren Gao",
+      "Guozhang Chen"
+    ],
+    "year": 2026,
+    "venue": "ICML 2026",
+    "doi": null,
+    "theme": "dynamics",
+    "summary": "Criticality-driven Online Local Alignment exploits long-range critical correlations so local recurrent updates approximate global backpropagation in constant activation memory.",
+    "question": "Can dynamical criticality allow strictly local learning rules to achieve global credit assignment?",
+    "motivation": "Backpropagation through time requires memory proportional to sequence length, whereas standard biological local rules suffer from severe gradient approximation bias.",
+    "idea_title": "Credit Propagation via Criticality",
+    "idea": "COLA places recurrent networks near dynamical criticality, using intrinsic long-range spatiotemporal correlations to propagate error information across time through a strictly local online update rule.",
+    "finding_title": "Sequence-Independent Memory and Stability",
+    "finding": "With only O(H) auxiliary state and constant activation memory independent of sequence length, COLA is competitive with backpropagation through time on standard benchmarks and demonstrates superior robustness on stability-sensitive tasks.",
+    "diagram": [
+      "Critical Recurrent Regime",
+      "Long-Range Correlations",
+      "Online Local Weight Update"
+    ],
+    "diagram_icons": [
+      "waves",
+      "network",
+      "learning"
+    ],
+    "diagram_caption": "Critical spatiotemporal correlations carry credit signals across time to guide local online updates.",
+    "related": [
+      "bridging-scales",
+      "dynamical-superspace"
+    ],
+    "kind": "conference",
+    "status_label": "Conference paper",
+    "resources": [
+      {
+        "label": "Conference page",
+        "url": "https://proceedings.mlr.press/v306/wang26be.html"
+      },
+      {
+        "label": "PDF",
+        "url": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/wang26be/wang26be.pdf"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/Criticality-Cognitive-Computation-Lab/COLA"
+      }
+    ],
+    "version_note": "",
+    "url": "/research/cola/",
+    "figure": "/assets/images/research/cola.svg"
+  },
+  {
+    "id": "hippocampal-gradient",
+    "title": "The Hippocampal Place Field Gradient: A Bio-inspired Framework Building Multiscale Representation for Better Sample Efficiency",
+    "authors": [
+      "Shujun Zhou",
+      "Junrong Qi",
+      "Guozhang Chen"
+    ],
+    "year": 2026,
+    "venue": "ICML 2026",
+    "doi": null,
+    "theme": "architecture",
+    "summary": "Modeling how grid cell projections generate multiscale hippocampal place fields inspires a Transformer positional embedding that improves sample efficiency.",
+    "question": "How do discrete grid cell inputs generate continuous multiscale hippocampal place fields?",
+    "motivation": "The hippocampus exhibits a continuous dorsal-ventral gradient of place field sizes, yet its circuit mechanism and computational benefit for learning remained unclear.",
+    "idea_title": "Frequency-Dependent Grid Projection Decay",
+    "idea": "A theoretical model derives continuous place field gradients from frequency-dependent decay of grid cell projections, motivating a Hippocampus-Inspired Positional Embedding (HIPE) for Transformer networks.",
+    "finding_title": "Balancing Precision and Sample Efficiency",
+    "finding": "Multiscale place fields establish an inductive bias that trades off spatial precision against sample efficiency, and incorporating HIPE into Transformers improves data-efficient generalization.",
+    "diagram": [
+      "Grid Frequency Projections",
+      "Dorsal-Ventral Field Gradient",
+      "Multiscale Transformer HIPE"
+    ],
+    "diagram_icons": [
+      "grid",
+      "hierarchy",
+      "learning"
+    ],
+    "diagram_caption": "Frequency-dependent grid projections form multiscale spatial codes that guide data-efficient positional embeddings.",
+    "related": [
+      "ssm-inductive-bias",
+      "sfa"
+    ],
+    "kind": "conference",
+    "status_label": "Conference paper",
+    "resources": [
+      {
+        "label": "Conference page",
+        "url": "https://icml.cc/virtual/2026/poster/65008"
+      },
+      {
+        "label": "Earlier preprint",
+        "url": "https://arxiv.org/abs/2506.04943"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/Criticality-Cognitive-Computation-Lab/HIPE"
+      }
+    ],
+    "version_note": "The linked earlier preprint has a different title and author list from the ICML conference version.",
+    "url": "/research/hippocampal-gradient/",
+    "figure": "/assets/images/research/hippocampal-gradient.svg"
+  },
+  {
+    "id": "ssm-inductive-bias",
+    "title": "Aligning Inductive Bias for Data-Efficient Generalization in State Space Models",
+    "authors": [
+      "Qiyu Chen",
+      "Guozhang Chen"
+    ],
+    "year": 2026,
+    "venue": "NeurIPS 2026",
+    "doi": null,
+    "theme": "computation",
+    "summary": "Formalizing state space model inductive bias through kernel frequency response enables task-dependent spectral initialization for data-efficient sequence generalization.",
+    "question": "How can sequence models align their initial inductive bias with task structure?",
+    "motivation": "State space models rely on fixed, task-agnostic priors; when this bias mismatches task structure, training consumes extra samples overcoming initialization.",
+    "idea_title": "Power-Spectrum Matching Initialization",
+    "idea": "We characterize linear time-invariant state space model bias via the spectrum of its induced kernel and introduce Task-Dependent Initialization (TDI) to match task power spectra.",
+    "finding_title": "Data-Efficient Spectral Generalization",
+    "finding": "Across synthetic and real-world sequence benchmarks, aligning initial model frequency response with task spectral structure substantially improves sample efficiency when default priors are mismatched.",
+    "diagram": [
+      "Task Power Spectrum",
+      "SSM Kernel Frequency Match",
+      "Data-Efficient Training"
+    ],
+    "diagram_icons": [
+      "spectrum",
+      "learning",
+      "transfer"
+    ],
+    "diagram_caption": "Matching the state space kernel spectrum to task frequencies accelerates downstream generalization.",
+    "related": [
+      "hippocampal-gradient",
+      "bridging-scales"
+    ],
+    "kind": "conference",
+    "status_label": "Accepted",
+    "resources": [
+      {
+        "label": "Conference page",
+        "url": "https://neurips.cc/virtual/2026/poster/150462"
+      },
+      {
+        "label": "Preprint",
+        "url": "https://arxiv.org/abs/2509.20789"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/Criticality-Cognitive-Computation-Lab/Aligning-Inductive-Bias-for-State-Space-Models"
+      }
+    ],
+    "version_note": "",
+    "url": "/research/ssm-inductive-bias/",
+    "figure": "/assets/images/research/ssm-inductive-bias.svg"
+  },
+  {
+    "id": "spikestereonet",
+    "title": "SpikeStereoNet: A Brain-Inspired Framework for Stereo Depth Estimation from Spike Streams",
+    "authors": [
+      "Zhuoheng Gao",
+      "Yihao Li",
+      "Jiyao Zhang",
+      "Rui Zhao",
+      "Tong Wu",
+      "Hao Tang",
+      "Zhaofei Yu",
+      "Hao Dong",
+      "Guozhang Chen",
+      "Tiejun Huang"
+    ],
+    "year": 2026,
+    "venue": "ICLR 2026",
+    "doi": null,
+    "theme": "computation",
+    "summary": "SpikeStereoNet estimates dense stereo depth directly from microsecond spike camera streams using iterative recurrent spiking neural network refinement.",
+    "question": "How can stereo depth be estimated directly from asynchronous spike streams?",
+    "motivation": "Conventional frame cameras blur fast motion, whereas microsecond spike cameras lack dedicated stereo algorithms and annotated benchmarks for depth perception.",
+    "idea_title": "Recurrent Spiking Stereo Refinement",
+    "idea": "SpikeStereoNet fuses raw binocular spike streams and iteratively refines disparity estimates through a recurrent spiking update module, evaluated on new synthetic and real-world stereo benchmarks.",
+    "finding_title": "Robust Depth in Challenging Scenes",
+    "finding": "The model outperforms prior approaches on textureless surfaces and extreme lighting while maintaining high depth accuracy when trained on substantially reduced data.",
+    "diagram": [
+      "Binocular Spike Streams",
+      "Recurrent Spiking Update",
+      "Dense Stereo Depth Map"
+    ],
+    "diagram_icons": [
+      "spikes",
+      "vision",
+      "network"
+    ],
+    "diagram_caption": "Binocular microsecond spike streams fuse through recurrent spiking updates to produce dense depth.",
+    "related": [
+      "spikegrasp",
+      "spklip"
+    ],
+    "kind": "conference",
+    "status_label": "Conference paper",
+    "resources": [
+      {
+        "label": "Conference page",
+        "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/136a45cd9b841bf785625709a19c6508-Abstract-Conference.html"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/Criticality-Cognitive-Computation-Lab/SpikeStereoNet"
+      }
+    ],
+    "version_note": "",
+    "url": "/research/spikestereonet/",
+    "figure": "/assets/images/research/spikestereonet.svg"
+  },
+  {
+    "id": "dynamical-superspace",
+    "title": "Redefining spiking neural networks through the lens of dynamical superspace",
+    "authors": [
+      "Guozhang Chen",
+      "Junrong Qi",
+      "Xingyu Liu",
+      "Qixuan Fan",
+      "Zhuoheng Gao",
+      "Songcheng Xu",
+      "Xuliang Wang",
+      "Yujie Wu",
+      "Dongping Yang",
+      "Douglas Zhou",
+      "Tiejun Huang"
+    ],
+    "year": 2026,
+    "venue": "Cognitive Neurodynamics",
+    "doi": "10.1007/s11571-026-10470-y",
+    "theme": "dynamics",
+    "summary": "This perspective introduces dynamical superspace, a theoretical framework organizing spiking neural networks by temporal density and non-equilibrium state-space complexity.",
+    "question": "How can spiking network theory unite deep learning with biological non-equilibrium dynamics?",
+    "motivation": "Synchronous rate-based spiking networks overlook the computational capacity of asynchronous biological timing, heterogeneity, and transient non-equilibrium trajectories.",
+    "idea_title": "Hierarchy of Temporal and State Complexity",
+    "idea": "The review organizes neural computation along a continuous superspace spanning clock-driven rate equilibria to asynchronous spike timing and complex non-equilibrium transient dynamics.",
+    "finding_title": "Roadmap for Native Neuromorphic Intelligence",
+    "finding": "The perspective outlines how heterogeneity, criticality, and evolutionary priors can bridge global optimization with local execution for low-latency event perception and long-context memory.",
+    "diagram": [
+      "Synchronous Rate Equilibria",
+      "Asynchronous Spike Timing",
+      "Non-Equilibrium Transients"
+    ],
+    "diagram_icons": [
+      "spikes",
+      "waves",
+      "hierarchy"
+    ],
+    "diagram_caption": "Neural computation ascends from synchronous rate codes to asynchronous, non-equilibrium dynamical trajectories.",
+    "related": [
+      "neural-heterogeneity",
+      "cola"
+    ],
+    "kind": "journal",
+    "status_label": "Journal article",
+    "resources": [
+      {
+        "label": "Paper",
+        "url": "https://link.springer.com/article/10.1007/s11571-026-10470-y"
+      }
+    ],
+    "version_note": "",
+    "url": "/research/dynamical-superspace/",
+    "figure": "/assets/images/research/dynamical-superspace.svg"
+  },
+  {
+    "id": "heterogeneous-plasticity",
+    "title": "Discovering heterogeneous synaptic plasticity rules via large-scale neural evolution",
+    "authors": [
+      "Ziyuan Ye",
+      "Beichen Huang",
+      "Yujie Wu",
+      "Guozhang Chen",
+      "Jibin Wu"
+    ],
+    "year": 2026,
+    "venue": "ICLR 2026",
+    "doi": null,
+    "theme": "computation",
+    "summary": "Large-scale multi-objective evolution in a realistic mouse visual cortex model uncovers biologically plausible, heterogeneous synaptic plasticity rules.",
+    "question": "How do diverse synaptic plasticity mechanisms coordinate to produce functional learning?",
+    "motivation": "Cortical synapses use diverse cell-type-specific plasticity rules, but how heterogeneous local mechanisms jointly give rise to adaptive behavior remains unclear.",
+    "idea_title": "Multi-Objective Evolutionary Rule Discovery",
+    "idea": "We parameterize pre- and postsynaptic spikes, eligibility traces, and neuromodulation via Taylor expansions inside a mouse V1 model, evolving over 2,600 plasticity parameters against biological and task objectives.",
+    "finding_title": "Computational Degeneracy and Few-Shot Learning",
+    "finding": "Evolution discovers mathematically distinct plasticity families that achieve comparable visual performance, demonstrating computational degeneracy alongside cross-scale robustness and rapid few-shot adaptation.",
+    "diagram": [
+      "Taylor Plasticity Search",
+      "Multi-Objective V1 Evolution",
+      "Degenerate Few-Shot Rules"
+    ],
+    "diagram_icons": [
+      "spikes",
+      "learning",
+      "vision"
+    ],
+    "diagram_caption": "Evolution searches high-dimensional synaptic rule spaces inside V1 to yield adaptable learning mechanisms.",
+    "related": [
+      "evolutionary-learning",
+      "v1-model"
+    ],
+    "kind": "conference",
+    "status_label": "Conference paper",
+    "resources": [
+      {
+        "label": "Conference page",
+        "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/dc1c478d31a5ed977309b6bec2d8c339-Abstract-Conference.html"
+      }
+    ],
+    "version_note": "",
+    "url": "/research/heterogeneous-plasticity/",
+    "figure": "/assets/images/research/heterogeneous-plasticity.svg"
+  },
+  {
+    "id": "representation-transfer",
+    "title": "Representation Transfer via Invariant Input-driven Continuous Attractors for Fast Domain Adaptation",
+    "authors": [
+      "Tie Xu",
+      "Shengdun Wu",
+      "Junwen Luo",
+      "Yao Yang",
+      "Feng Lin",
+      "Junjie Jiang",
+      "Guozhang Chen",
+      "Dongping Yang"
+    ],
+    "year": 2026,
+    "venue": "Communications Biology",
+    "doi": "10.1038/s42003-026-09938-8",
+    "theme": "computation",
+    "summary": "Modular recurrent networks form invariant input-driven continuous attractors that enable rapid, few-shot domain adaptation through lightweight readout adapters.",
+    "question": "How can neural representations transfer reliably across shifting, noisy real-world domains?",
+    "motivation": "End-to-end deep networks degrade under environmental shifts and require expensive full-model retraining when deployed in noisy, changing conditions.",
+    "idea_title": "Modular Continuous Attractor Pretraining",
+    "idea": "Task-agnostic pretraining shapes modular recurrent networks to embed inputs onto low-dimensional, invariant continuous attractor manifolds, requiring only a lightweight adapter for new downstream tasks.",
+    "finding_title": "Parameter-Efficient Few-Shot Adaptation",
+    "finding": "On gesture and rehabilitation action recognition tasks, the framework achieves accuracy competitive with state-of-the-art methods, especially in few-shot settings, while requiring an order of magnitude fewer parameters and minimal training.",
+    "diagram": [
+      "Modular RNN Pretraining",
+      "Invariant Attractor Manifold",
+      "Lightweight Task Adapter"
+    ],
+    "diagram_icons": [
+      "network",
+      "latent",
+      "transfer"
+    ],
+    "diagram_caption": "Task-agnostic recurrent modules form invariant attractor manifolds that adapt rapidly via lightweight adapters.",
+    "related": [
+      "neural-heterogeneity",
+      "ssm-inductive-bias"
+    ],
+    "kind": "journal",
+    "status_label": "Journal article",
+    "resources": [
+      {
+        "label": "Paper",
+        "url": "https://www.nature.com/articles/s42003-026-09938-8"
+      },
+      {
+        "label": "Code",
+        "url": "https://doi.org/10.5281/zenodo.16441066"
+      }
+    ],
+    "version_note": "",
+    "url": "/research/representation-transfer/",
+    "figure": "/assets/images/research/representation-transfer.svg"
+  },
+  {
+    "id": "decoding-microcircuits",
+    "title": "Decoding Cortical Microcircuits: A Generative Model for Latent Space Exploration and Controlled Synthesis",
+    "authors": [
+      "Xingyu Liu",
+      "Yubin Li",
+      "Guozhang Chen"
+    ],
+    "year": 2026,
+    "venue": "NeuroAI Multimodal Intelligence Workshop at AAAI 2026",
+    "doi": null,
+    "theme": "architecture",
+    "summary": "A generative latent model compresses mouse cortical microcircuit connectomes to explore structure-function relationships and synthesize bio-plausible networks.",
+    "question": "Can high-dimensional cortical microcircuits be represented and synthesized through a compact latent code?",
+    "motivation": "Directly analyzing structure-function links in massive connectome graphs is intractable, though developmental biology suggests circuits arise from compressed genetic blueprints.",
+    "idea_title": "Generative Microcircuit Latent Compression",
+    "idea": "We train a variational generative model on mouse cortical microcircuit connectivity maps, linking positions in the learned latent space to computational performance on reservoir tasks.",
+    "finding_title": "Controlled Bio-Plausible Circuit Synthesis",
+    "finding": "The compressed latent space captures essential microcircuit structure, associates encoded topologies with computational functions on reservoir tasks, and enables controllable generation of novel synthetic microcircuits with desired structural features.",
+    "diagram": [
+      "Mouse Cortical Connectome",
+      "Compressed Latent Blueprint",
+      "Controlled Circuit Synthesis"
+    ],
+    "diagram_icons": [
+      "network",
+      "latent",
+      "memory"
+    ],
+    "diagram_caption": "Detailed microcircuit maps compress into a latent blueprint for functional analysis and synthesis.",
+    "related": [
+      "connectome-to-function",
+      "interpretable-connectome"
+    ],
+    "kind": "workshop",
+    "status_label": "Workshop paper",
+    "resources": [
+      {
+        "label": "Conference page",
+        "url": "https://proceedings.mlr.press/v308/liu26a.html"
+      },
+      {
+        "label": "Preprint",
+        "url": "https://arxiv.org/abs/2506.11062"
+      },
+      {
+        "label": "PDF",
+        "url": "https://raw.githubusercontent.com/mlresearch/v308/main/assets/liu26a/liu26a.pdf"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/Criticality-Cognitive-Computation-Lab/Connectome-Analysis-VAE"
+      }
+    ],
+    "version_note": "",
+    "url": "/research/decoding-microcircuits/",
+    "figure": "/assets/images/research/decoding-microcircuits.svg"
+  },
+  {
+    "id": "sparse-cortical-codes",
+    "title": "Sparse cortical dynamics reveal flexible condition-dependent spike-order codes",
+    "authors": [
+      "Guozhang Chen",
+      "Wolfgang Maass",
+      "Franz Scherr"
+    ],
+    "year": 2026,
+    "venue": "bioRxiv",
+    "doi": "10.64898/2026.05.13.724761",
+    "theme": "dynamics",
+    "summary": "Combining mouse visual cortex recordings with a data-driven microcircuit model reveals how local connectivity and heterogeneity support flexible spike-order codes.",
+    "question": "How do sparse cortical circuits organize spikes into flexible, condition-dependent temporal codes?",
+    "motivation": "Neocortical circuits compute with remarkably few spikes, yet how recurrent wiring avoids rigid temporal pipelines to adapt spike timing remains unclear.",
+    "idea_title": "Comparing V1 Recordings and Microcircuit Models",
+    "idea": "We analyze single-trial spike-latency sequences in mouse V1 recordings alongside a task-trained data-driven V1 microcircuit model, performing structural ablations and targeted silencing of high-information early neurons.",
+    "finding_title": "Heterogeneity and Local Wiring Enable Flexibility",
+    "finding": "Neuronal diversity and distance-dependent local connectivity suppress rigid sequential firing to reproduce condition-dependent spike-order codes, while silencing early informative neurons disrupts low-dimensional task trajectories and decisions.",
+    "diagram": [
+      "Heterogeneous Local V1 Wiring",
+      "Adaptive Spike-Order Codes",
+      "Trajectory-Guided Decisions"
+    ],
+    "diagram_icons": [
+      "network",
+      "spikes",
+      "vision"
+    ],
+    "diagram_caption": "Local connectivity and cellular diversity shape sparse spike-order sequences that guide visual decisions.",
+    "related": [
+      "cortical-computations",
+      "neural-heterogeneity"
+    ],
+    "kind": "preprint",
+    "status_label": "Preprint",
+    "resources": [
+      {
+        "label": "Preprint",
+        "url": "https://www.biorxiv.org/content/10.64898/2026.05.13.724761v1"
+      }
+    ],
+    "version_note": "",
+    "url": "/research/sparse-cortical-codes/",
+    "figure": "/assets/images/research/sparse-cortical-codes.svg"
+  },
+  {
+    "id": "bridging-scales",
+    "title": "Bridging Scales: Spectral Theory Reveals How Local Connectivity Rules Sculpt Global Neural Dynamics in Spatially Extended Networks",
+    "authors": [
+      "Yuhan Huang",
+      "Keren Gao",
+      "Dongping Yang",
+      "Sen Song",
+      "Guozhang Chen"
+    ],
+    "year": 2025,
+    "venue": "NeurIPS 2025",
+    "doi": "10.52202/085713-2217",
+    "theme": "dynamics",
+    "summary": "Spectral theory links microscopic excitation-inhibition connectivity rules to eigenvalue signatures that predict macroscopic cortical waves, oscillations, and chaos.",
+    "question": "How do local synaptic connectivity rules sculpt global spatiotemporal brain dynamics?",
+    "motivation": "Cortical activity shifts across arousal states between asynchronous firing, oscillations, bumps, and waves, yet connecting local circuit parameters to macroscopic regimes remained difficult.",
+    "idea_title": "Spatial Connectivity Spectral Theory",
+    "idea": "We derive an analytical spectral theory for spatially extended excitatory-inhibitory networks, mapping projection ranges, connection strengths, and densities onto bulk disk and outlier eigenvalues.",
+    "finding_title": "Analytical Prediction of Dynamical Regimes",
+    "finding": "The eigenvalue spectrum quantitatively predicts transitions among synchronous, asynchronous, oscillatory, bump, traveling-wave, and chaotic regimes, offering a principled starting point for inferring effective connectivity changes from macroscopic brain activity across arousal states.",
+    "diagram": [
+      "Local E/I Connectivity Rules",
+      "Bulk and Outlier Spectrum",
+      "Global Spatiotemporal Waves"
+    ],
+    "diagram_icons": [
+      "network",
+      "spectrum",
+      "waves"
+    ],
+    "diagram_caption": "Local spatial connectivity parameters determine spectral signatures that govern macroscopic neural dynamics.",
+    "related": [
+      "attention-dynamics",
+      "neural-heterogeneity"
+    ],
+    "kind": "conference",
+    "status_label": "Conference paper",
+    "resources": [
+      {
+        "label": "Conference page",
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/5f63999aa6b4011a3615c2508c622821-Abstract-Conference.html"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/huang-yh20/spatial-linear-project"
+      }
+    ],
+    "version_note": "",
+    "url": "/research/bridging-scales/",
+    "figure": "/assets/images/research/bridging-scales.svg"
+  },
+  {
+    "id": "spikegrasp",
+    "title": "SpikeGrasp: A Benchmark for 6-DoF Grasp Pose Detection from Stereo Spike Streams",
+    "authors": [
+      "Zhuoheng Gao",
+      "Jiyao Zhang",
+      "Zhiyong Xie",
+      "Hao Dong",
+      "Zhaofei Yu",
+      "Rongmei Chen",
+      "Guozhang Chen",
+      "Tiejun Huang"
+    ],
+    "year": 2025,
+    "venue": "arXiv",
+    "doi": null,
+    "theme": "computation",
+    "summary": "SpikeGrasp infers 6-DoF robotic grasp poses directly from stereo spike streams via recurrent spiking networks without point-cloud reconstruction.",
+    "question": "Can robots detect 6-DoF grasp poses directly from asynchronous spike streams?",
+    "motivation": "Conventional robotic grasping relies on explicit 3D point-cloud reconstruction, a computationally heavy step absent from biological visuomotor pathways.",
+    "idea_title": "Point-Cloud-Free Visuomotor Spiking Pipeline",
+    "idea": "Mimicking biological visuomotor pathways, SpikeGrasp fuses binocular spike camera streams and uses a recurrent spiking network to iteratively refine 6-DoF grasp hypotheses end to end.",
+    "finding_title": "Data-Efficient Grasping in Clutter",
+    "finding": "Evaluated on a new large-scale synthetic stereo spike benchmark, SpikeGrasp outperforms point-cloud baselines in cluttered and textureless scenes with strong data efficiency.",
+    "diagram": [
+      "Stereo Retinal Spike Streams",
+      "Recurrent Visuomotor SNN",
+      "6-DoF Robotic Grasp Pose"
+    ],
+    "diagram_icons": [
+      "spikes",
+      "network",
+      "robot"
+    ],
+    "diagram_caption": "Stereo spike streams feed directly into a recurrent spiking network to predict grasp poses.",
+    "related": [
+      "spikestereonet",
+      "spklip"
+    ],
+    "kind": "preprint",
+    "status_label": "Withdrawn preprint",
+    "resources": [
+      {
+        "label": "Withdrawn preprint",
+        "url": "https://arxiv.org/abs/2510.10602"
+      }
+    ],
+    "version_note": "The earlier arXiv preprint was withdrawn. The figure is from a different manuscript supplied by the author.",
+    "url": "/research/spikegrasp/",
+    "figure": "/assets/images/research/spikegrasp.svg"
+  },
+  {
+    "id": "spklip",
+    "title": "SPKLIP: Aligning Spike Video Streams with Natural Language",
+    "authors": [
+      "Yongchang Gao",
+      "Meiling Jin",
+      "Zhaofei Yu",
+      "Tiejun Huang",
+      "Guozhang Chen"
+    ],
+    "year": 2025,
+    "venue": "arXiv",
+    "doi": null,
+    "theme": "computation",
+    "summary": "SPKLIP aligns asynchronous spike video streams with natural language through hierarchical multiscale temporal modeling and spike-text contrastive learning.",
+    "question": "How can sparse, high-speed spike video streams be aligned with natural language?",
+    "motivation": "Standard vision-language models like CLIP struggle on spike camera outputs because frame-based encoders mismatch sparse, microsecond-resolved event streams.",
+    "idea_title": "Hierarchical Spike-Text Contrastive Alignment",
+    "idea": "SPKLIP extracts multiscale temporal dynamics from spike streams via a hierarchical encoder (including a full-spiking variant) and aligns visual features with text through contrastive learning.",
+    "finding_title": "Energy-Efficient Few-Shot Multimodal Transfer",
+    "finding": "The architecture achieves state-of-the-art performance on benchmark spike datasets and strong few-shot generalization on a new real-world dataset while lowering energy consumption through spiking visual encoding.",
+    "diagram": [
+      "Asynchronous Spike Video",
+      "Multiscale Temporal Encoder",
+      "Contrastive Language Space"
+    ],
+    "diagram_icons": [
+      "spikes",
+      "hierarchy",
+      "transfer"
+    ],
+    "diagram_caption": "Hierarchical temporal features extracted from spike streams align with text in a shared space.",
+    "related": [
+      "spikestereonet",
+      "spikegrasp"
+    ],
+    "kind": "preprint",
+    "status_label": "Preprint",
+    "resources": [
+      {
+        "label": "Preprint",
+        "url": "https://arxiv.org/abs/2505.12656"
+      }
+    ],
+    "version_note": "",
+    "url": "/research/spklip/",
+    "figure": "/assets/images/research/spklip.svg"
+  },
+  {
+    "id": "interpretable-connectome",
+    "title": "Unveiling and Steering Connectome Organization with Interpretable Latent Variables",
+    "authors": [
+      "Yubin Li",
+      "Xingyu Liu",
+      "Guozhang Chen"
+    ],
+    "year": 2025,
+    "venue": "arXiv",
+    "doi": null,
+    "theme": "architecture",
+    "summary": "A generative representation learning framework extracts interpretable latent variables from the fruit fly connectome to steer synthetic circuit topology.",
+    "question": "Can low-dimensional latent variables uncover and steer the organization of biological connectomes?",
+    "motivation": "Although whole-brain connectomes contain intricate synaptic graphs, their development from compact genetic codes points to low-dimensional organizational rules.",
+    "idea_title": "Explainable FlyWire Subgraph Encoding",
+    "idea": "Combining subgraph extraction from the Drosophila FlyWire connectome with a generative model and explainability module links compact latent dimensions to specific structural graph features.",
+    "finding_title": "Controllable Subgraph Generation",
+    "finding": "The learned representation accurately reconstructs biological subgraphs and enables targeted manipulation of latent variables to synthesize circuits with predefined topological properties.",
+    "diagram": [
+      "FlyWire Connectome Subgraphs",
+      "Interpretable Latent Codes",
+      "Steered Circuit Generation"
+    ],
+    "diagram_icons": [
+      "network",
+      "latent",
+      "hierarchy"
+    ],
+    "diagram_caption": "Connectome subgraphs map to interpretable latent axes that steer synthetic circuit topology.",
+    "related": [
+      "decoding-microcircuits",
+      "connectome-to-function"
+    ],
+    "kind": "preprint",
+    "status_label": "Preprint",
+    "resources": [
+      {
+        "label": "Preprint",
+        "url": "https://arxiv.org/abs/2505.13011"
+      }
+    ],
+    "version_note": "",
+    "url": "/research/interpretable-connectome/",
+    "figure": "/assets/images/research/interpretable-connectome.svg"
+  },
+  {
+    "id": "neural-heterogeneity",
+    "title": "Neural heterogeneity enhances reliable neural information processing: Local sensitivity and globally input-slaved transient dynamics",
+    "authors": [
+      "Shengdun Wu",
+      "Haiping Huang",
+      "Shengjun Wang",
+      "Guozhang Chen",
+      "Changsong Zhou",
+      "Dongping Yang"
+    ],
+    "year": 2025,
+    "venue": "Science Advances",
+    "doi": "10.1126/sciadv.adr3903",
+    "theme": "dynamics",
+    "summary": "Cellular and synaptic heterogeneity disrupts intrinsic coherent waves to produce locally sensitive, globally input-slaved transient dynamics for reliable coding.",
+    "question": "How do variable cortical circuits represent external stimuli reliably across trials?",
+    "motivation": "Cortical activity fluctuates across trials and time, raising the puzzle of how noisy populations maintain consistent, high-fidelity stimulus representations.",
+    "idea_title": "Heterogeneous Spiking Circuit Modeling",
+    "idea": "We incorporate biological diversity in neuronal timescales, spike thresholds, input projections, and in-degrees into spatially extended spiking circuit models driven by external stimuli.",
+    "finding_title": "Input-Slaved Transient Information Processing",
+    "finding": "Heterogeneity breaks up intrinsic coherent activity patterns, increasing local responsiveness and locking global transient trajectories to external inputs, which also improves liquid-wave reservoir computing.",
+    "diagram": [
+      "Cellular Timescale Diversity",
+      "Desynchronized Wave Activity",
+      "Input-Slaved Reliable Coding"
+    ],
+    "diagram_icons": [
+      "spikes",
+      "waves",
+      "memory"
+    ],
+    "diagram_caption": "Biological heterogeneity disrupts autonomous waves so network transients reliably track external inputs.",
+    "related": [
+      "spontaneous-computation",
+      "bridging-scales"
+    ],
+    "kind": "journal",
+    "status_label": "Journal article",
+    "resources": [
+      {
+        "label": "Paper",
+        "url": "https://www.science.org/doi/10.1126/sciadv.adr3903"
+      }
+    ],
+    "version_note": "",
+    "url": "/research/neural-heterogeneity/",
+    "figure": "/assets/images/research/neural-heterogeneity.svg"
+  },
+  {
+    "id": "evolutionary-learning",
+    "title": "Evolutionary learning in neural networks by heterosynaptic plasticity",
+    "authors": [
+      "Zedong Bi",
+      "Ruiqi Fu",
+      "Guozhang Chen",
+      "Dongping Yang",
+      "Yu Zhou",
+      "Liang Tian"
+    ],
+    "year": 2025,
+    "venue": "iScience",
+    "doi": "10.1016/j.isci.2025.112340",
+    "theme": "computation",
+    "summary": "Combining evolutionary routing with dopamine-guided heterosynaptic plasticity trains biophysical spiking and analog neural networks without backpropagation.",
+    "question": "How can complex biophysical neural networks learn effectively without gradient backpropagation?",
+    "motivation": "Backpropagation struggles with instability and non-differentiable dynamics when optimizing detailed biophysical and spiking neuron models.",
+    "idea_title": "Dopamine-Guided Evolutionary Heterosynaptic Plasticity",
+    "idea": "An evolutionary algorithm evaluates distinct neural routing pathways via alternating gating while guiding synaptic updates through dopamine modulation, dendritic meta-plasticity, and memory replay.",
+    "finding_title": "Gradient-Free Biophysical Network Training",
+    "finding": "The framework trains both feedforward and recurrent spiking or analog networks, reproducing cognitive-like neural dynamics and matching gradient-based performance on classification and control tasks.",
+    "diagram": [
+      "Alternating Pathway Gating",
+      "Dopamine Synaptic Plasticity",
+      "Trained Biophysical Network"
+    ],
+    "diagram_icons": [
+      "network",
+      "spikes",
+      "learning"
+    ],
+    "diagram_caption": "Evolutionary pathway selection and dopamine-driven heterosynaptic plasticity jointly optimize biophysical networks.",
+    "related": [
+      "heterogeneous-plasticity",
+      "cola"
+    ],
+    "kind": "journal",
+    "status_label": "Journal article",
+    "resources": [
+      {
+        "label": "Paper",
+        "url": "https://doi.org/10.1016/j.isci.2025.112340"
+      }
+    ],
+    "version_note": "",
+    "url": "/research/evolutionary-learning/",
+    "figure": "/assets/images/research/evolutionary-learning.svg"
+  },
+  {
+    "id": "cortical-computations",
+    "title": "Data-based large-scale models provide a window into the organization of cortical computations",
+    "authors": [
+      "Guozhang Chen",
+      "Franz Scherr",
+      "Wolfgang Maass"
+    ],
+    "year": 2023,
+    "venue": "bioRxiv",
+    "doi": "10.1101/2023.04.28.538662",
+    "theme": "architecture",
+    "summary": "Training data-based large-scale cortical microcircuit models enables reverse-engineering of how anatomical structure organizes sparse, energy-efficient cortical computation.",
+    "question": "How does the anatomical structure of cortical microcircuits organize neural computation?",
+    "motivation": "Although neurobiology has mapped neocortical cell types and connectivity, experimental tools alone cannot fully resolve causal structure-function relationships.",
+    "idea_title": "Reverse-Engineering Data-Driven Microcircuits",
+    "idea": "We train large-scale spiking models integrating detailed anatomical and physiological microcircuit data on natural tasks, then analyze internal dynamics to reverse-engineer their computational organization.",
+    "finding_title": "Sparse Coding and Testable Hypotheses",
+    "finding": "Trained microcircuits reproduce experimental cortical coding traits absent in standard deep networks, compute with energy-efficient sparse activity, and generate testable hypotheses for neuroscience.",
+    "diagram": [
+      "Data-Driven Circuit Model",
+      "Task-Trained Sparse Coding",
+      "Reverse-Engineered Mechanism"
+    ],
+    "diagram_icons": [
+      "network",
+      "spikes",
+      "vision"
+    ],
+    "diagram_caption": "Anatomically constrained microcircuit models trained on tasks reveal sparse cortical computing mechanisms.",
+    "related": [
+      "v1-model",
+      "decoding-microcircuits"
+    ],
+    "kind": "preprint",
+    "status_label": "Preprint",
+    "resources": [
+      {
+        "label": "Preprint",
+        "url": "https://www.biorxiv.org/content/10.1101/2023.04.28.538662v3"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/ifgovh/Training-data-driven-V1-model"
+      }
+    ],
+    "version_note": "",
+    "url": "/research/cortical-computations/",
+    "figure": "/assets/images/research/cortical-computations.svg"
+  },
+  {
+    "id": "v1-model",
+    "title": "A data-based large-scale model for primary visual cortex enables brain-like robust and versatile visual processing",
+    "authors": [
+      "Guozhang Chen",
+      "Franz Scherr",
+      "Wolfgang Maass"
+    ],
+    "year": 2022,
+    "venue": "Science Advances",
+    "doi": "10.1126/sciadv.abq7592",
+    "theme": "architecture",
+    "summary": "A comprehensive data-based model of primary visual cortex achieves versatile, noise-robust visual processing with sparse, energy-efficient neural coding.",
+    "question": "Can an anatomically realistic primary visual cortex model support versatile visual processing?",
+    "motivation": "Convolutional neural networks lack biological circuit structure, consume substantial energy, and remain fragile to sensory noise compared with mammalian vision.",
+    "idea_title": "Multi-Task Evaluation of Bio-Realistic V1",
+    "idea": "We evaluate a large-scale spiking model of area V1 incorporating detailed anatomical connectivity and neurophysiological cell properties across diverse spatial and temporal visual tasks.",
+    "finding_title": "Brain-Like Versatility and Noise Robustness",
+    "finding": "A single data-driven V1 circuit solves diverse visual tasks, integrates temporally dispersed inputs, reproduces cortical coding properties, and exhibits strong resilience to perturbation.",
+    "diagram": [
+      "Anatomical V1 Microcircuit",
+      "Sparse Population Coding",
+      "Robust Multi-Task Vision"
+    ],
+    "diagram_icons": [
+      "network",
+      "spikes",
+      "vision"
+    ],
+    "diagram_caption": "Anatomically grounded V1 circuitry generates sparse neural codes that support noise-robust visual tasks.",
+    "related": [
+      "cortical-computations",
+      "heterogeneous-plasticity"
+    ],
+    "kind": "journal",
+    "status_label": "Journal article",
+    "resources": [
+      {
+        "label": "Paper",
+        "url": "https://www.science.org/doi/10.1126/sciadv.abq7592"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/ifgovh/Training-data-driven-V1-model"
+      }
+    ],
+    "version_note": "",
+    "url": "/research/v1-model/",
+    "figure": "/assets/images/research/v1-model.svg"
+  },
+  {
+    "id": "attention-dynamics",
+    "title": "A spatiotemporal mechanism of visual attention: Superdiffusive motion and theta oscillations of neural population activity patterns",
+    "authors": [
+      "Guozhang Chen",
+      "Pulin Gong"
+    ],
+    "year": 2022,
+    "venue": "Science Advances",
+    "doi": "10.1126/sciadv.abl4995",
+    "theme": "dynamics",
+    "summary": "Near dynamical state transitions, cortical circuit models generate a wandering attention spotlight with theta oscillations and superdiffusive spatial sampling.",
+    "question": "What circuit dynamics generate oscillatory fluctuations and efficient sampling in visual attention?",
+    "motivation": "Visual attention fluctuates rhythmically in time and space, yet how cortical circuits produce these variations and exploit them functionally remained unclear.",
+    "idea_title": "Critical Transition Spotlight Dynamics",
+    "idea": "We model spatially extended cortical circuits operating near the transition between dynamical regimes to analyze the emergent motion of localized population activity patterns.",
+    "finding_title": "Superdiffusive Exploration and Theta Rhythms",
+    "finding": "The emergent attention spotlight exhibits variable theta oscillations and Lévy-like superdiffusive spatial trajectories, enabling adaptive switching between local exploitation and global scene exploration.",
+    "diagram": [
+      "Circuit State Transition",
+      "Theta-Modulated Spotlight",
+      "Superdiffusive Scene Sampling"
+    ],
+    "diagram_icons": [
+      "waves",
+      "spectrum",
+      "vision"
+    ],
+    "diagram_caption": "Transition-regime circuit dynamics drive an oscillatory spotlight that samples visual scenes superdiffusively.",
+    "related": [
+      "spontaneous-computation",
+      "anomalous-learning"
+    ],
+    "kind": "journal",
+    "status_label": "Journal article",
+    "resources": [
+      {
+        "label": "Paper",
+        "url": "https://www.science.org/doi/10.1126/sciadv.abl4995"
+      }
+    ],
+    "version_note": "",
+    "url": "/research/attention-dynamics/",
+    "figure": "/assets/images/research/attention-dynamics.svg"
+  },
+  {
+    "id": "anomalous-learning",
+    "title": "Anomalous diffusion dynamics of learning in deep neural networks",
+    "authors": [
+      "Guozhang Chen",
+      "Cheng Kevin Qu",
+      "Pulin Gong"
+    ],
+    "year": 2022,
+    "venue": "Neural Networks",
+    "doi": "10.1016/j.neunet.2022.01.019",
+    "theme": "dynamics",
+    "summary": "Stochastic gradient descent navigates fractal-like deep network loss landscapes through anomalous superdiffusion, enabling escape from sharp local minima.",
+    "question": "How does stochastic gradient descent escape sharp local minima in deep networks?",
+    "motivation": "Deep network training optimizes highly non-convex loss landscapes, yet standard Brownian diffusion approximations fail to explain how SGD reliably finds wide minima.",
+    "idea_title": "Statistical Physics of Loss Navigation",
+    "idea": "Using energy-landscape methods from complex physical systems, we track weight trajectories and diffusion exponents during stochastic gradient descent across convolutional and residual architectures.",
+    "finding_title": "Fractal Landscapes Drive Superdiffusive Jumps",
+    "finding": "Interaction between SGD and fractal-like loss geometry produces early superdiffusive jumps that escape sharp local minima, followed by late-stage subdiffusion as weights settle.",
+    "diagram": [
+      "Fractal Loss Landscape",
+      "Superdiffusive Weight Jumps",
+      "Wide Minimum Convergence"
+    ],
+    "diagram_icons": [
+      "grid",
+      "waves",
+      "learning"
+    ],
+    "diagram_caption": "Fractal loss geometry induces superdiffusive gradient steps that escape sharp traps toward wide minima.",
+    "related": [
+      "attention-dynamics",
+      "cola"
+    ],
+    "kind": "journal",
+    "status_label": "Journal article",
+    "resources": [
+      {
+        "label": "Paper",
+        "url": "https://doi.org/10.1016/j.neunet.2022.01.019"
+      },
+      {
+        "label": "Preprint",
+        "url": "https://arxiv.org/abs/2009.10588"
+      },
+      {
+        "label": "Code",
+        "url": "https://github.com/ifgovh/Anomalous-diffusion-dynamics-of-SGD"
+      }
+    ],
+    "version_note": "",
+    "url": "/research/anomalous-learning/",
+    "figure": "/assets/images/research/anomalous-learning.svg"
+  },
+  {
+    "id": "vision-reservoir",
+    "title": "ViR:the Vision Reservoir",
+    "authors": [
+      "Xian Wei",
+      "Bin Wang",
+      "Mingsong Chen",
+      "Ji Yuan",
+      "Hai Lan",
+      "Jiehuang Shi",
+      "Xuan Tang",
+      "Bo Jin",
+      "Guozhang Chen",
+      "Dongping Yang"
+    ],
+    "year": 2021,
+    "venue": "arXiv",
+    "doi": "10.48550/arXiv.2112.13545",
+    "theme": "computation",
+    "summary": "Vision Reservoir replaces trainable Transformer attention layers with fixed recurrent reservoirs to classify images efficiently without large-scale pretraining.",
+    "question": "Can dynamical reservoirs replace self-attention for parameter-efficient image classification from scratch?",
+    "motivation": "Vision Transformers require heavy computation and memory during large-scale pretraining and often overfit when trained from scratch on smaller datasets.",
+    "idea_title": "Tokenized Deep Vision Reservoir Architecture",
+    "idea": "Splitting images into fixed-length token sequences, ViR substitutes multi-head self-attention with nearly fully connected recurrent reservoir modules arranged in single- and multi-layer architectures.",
+    "finding_title": "Pretraining-Free Efficiency via Reservoir Dynamics",
+    "finding": "Across image classification benchmarks without pretraining, ViR outperforms Vision Transformers in both model and computational complexity, requiring 5% to 15% of the parameters and 20% to 40% of the memory footprint, as explained by small-world characteristics, Lyapunov exponents, and memory capacity.",
+    "diagram": [
+      "Image Patch Token Sequence",
+      "Small-World Reservoir Layer",
+      "Compact Readout Classifier"
+    ],
+    "diagram_icons": [
+      "grid",
+      "network",
+      "vision"
+    ],
+    "diagram_caption": "Image token sequences project through a fixed recurrent reservoir for lightweight visual classification.",
+    "related": [
+      "connectome-to-function",
+      "sfa"
+    ],
+    "kind": "preprint",
+    "status_label": "Preprint",
+    "resources": [
+      {
+        "label": "Preprint",
+        "url": "https://arxiv.org/abs/2112.13545"
+      }
+    ],
+    "version_note": "",
+    "url": "/research/vision-reservoir/",
+    "figure": "/assets/images/research/vision-reservoir.svg"
+  },
+  {
+    "id": "spontaneous-computation",
+    "title": "Computing by modulating spontaneous cortical activity patterns as a mechanism of active visual processing",
+    "authors": [
+      "Guozhang Chen",
+      "Pulin Gong"
+    ],
+    "year": 2019,
+    "venue": "Nature Communications",
+    "doi": "10.1038/s41467-019-12918-8",
+    "theme": "dynamics",
+    "summary": "External sensory inputs compute by modulating and redistributing ongoing spontaneous cortical activity patterns, accelerating active visual processing.",
+    "question": "What computational role does ongoing spontaneous cortical activity play during sensory processing?",
+    "motivation": "Cortical circuits generate complex spatiotemporal activity even without sensory input, but whether this ongoing activity actively contributes to computation remained unresolved.",
+    "idea_title": "Computing by Modulating Spontaneous Activity",
+    "idea": "Using biophysically grounded circuit models, we analyze how external visual stimuli interact with and redistribute intrinsic propagating patterns of spontaneous population activity.",
+    "finding_title": "Accelerated Processing and Perceptual Bubbles",
+    "finding": "Stimulus-driven modulation of spontaneous patterns speeds up cortical response generation, unifies single-neuron and circuit variability findings, and explains psychophysical perceptual bubbles in face recognition.",
+    "diagram": [
+      "Intrinsic Spontaneous Waves",
+      "Stimulus Pattern Modulation",
+      "Rapid Active Perception"
+    ],
+    "diagram_icons": [
+      "waves",
+      "spikes",
+      "vision"
+    ],
+    "diagram_caption": "External stimuli reshape ongoing spontaneous cortical waves to accelerate active visual perception.",
+    "related": [
+      "attention-dynamics",
+      "neural-heterogeneity"
+    ],
+    "kind": "journal",
+    "status_label": "Journal article",
+    "resources": [
+      {
+        "label": "Paper",
+        "url": "https://www.nature.com/articles/s41467-019-12918-8"
+      }
+    ],
+    "version_note": "",
+    "url": "/research/spontaneous-computation/",
+    "figure": "/assets/images/research/spontaneous-computation.svg"
+  }
+]
