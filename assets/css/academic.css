@@ -17,6 +17,8 @@ body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(
 ::selection { background: #e9d2d7; color: var(--ink); }
 img, svg, video { display: block; max-width: 100%; }
 img { height: auto; }
+.site-main .katex { font-size: 1.05em; }
+.site-main .katex-display { max-width: 100%; overflow-x: auto; overflow-y: hidden; padding-block: .25em; }
 a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 4px; overflow-wrap: anywhere; }
 a:hover { color: var(--accent-dark); }
 a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; border-radius: 2px; }

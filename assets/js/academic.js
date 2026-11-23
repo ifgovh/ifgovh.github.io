@@ -3,6 +3,20 @@
 
   document.documentElement.classList.add('has-js');
 
+  // Locally hosted math and fonts also cover publication/highlight summaries.
+  var mathRoot = document.querySelector('main');
+  if (mathRoot && typeof window.renderMathInElement === 'function') {
+    window.renderMathInElement(mathRoot, {
+      delimiters: [
+        { left: '\\[', right: '\\]', display: true },
+        { left: '\\(', right: '\\)', display: false }
+      ],
+      throwOnError: false,
+      trust: false,
+      output: 'htmlAndMathml'
+    });
+  }
+
   var menuButton = document.querySelector('.menu-toggle');
   var navigation = document.querySelector('.site-nav');
   if (menuButton && navigation) {

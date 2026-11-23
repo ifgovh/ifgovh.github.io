@@ -20,6 +20,7 @@ async function walk(folder) {
 const files = await walk(directory);
 const known = new Set(files.map(file => path.resolve(file).toLowerCase()));
 const htmlFiles = files.filter(file => file.endsWith('.html'));
+if (!htmlFiles.length) throw new Error('No generated HTML pages found; finish the preview build before checking the site.');
 const documents = new Map();
 const issues = [];
 let checked = 0;
