@@ -4,5 +4,5 @@ section: publications
 paper_id: iterative-latent-refinement
 permalink: /research/iterative-latent-refinement/
 title: "Iterative Latent Refinement for Value Learning in Offline Goal-Conditioned RL"
-description: "We study iterative latent refinement as an architectural replacement for the feedforward value or critic backbone used by existing offline GCRL algorithms."
+description: "Replacing static single-pass value networks with weight-reusing iterative latent dynamics improves long-horizon value estimation and policy extraction across offline goal-conditioned reinforcement learning benchmarks without altering training objectives or feedforward actors."
 ---

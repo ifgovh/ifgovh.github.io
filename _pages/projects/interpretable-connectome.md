@@ -4,5 +4,5 @@ section: publications
 paper_id: interpretable-connectome
 permalink: /research/interpretable-connectome/
 title: "Unveiling and Steering Connectome Organization with Interpretable Latent Variables"
-description: "A generative representation learning framework extracts interpretable latent variables from the fruit fly connectome to steer synthetic circuit topology."
+description: "An explainable graph-attention generative model extracts low-dimensional latent variables from Drosophila FlyWire visual subgraphs to decode motif organization and steer bio-plausible circuit synthesis."
 ---
